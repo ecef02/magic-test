@@ -1,0 +1,1909 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Application>
+
+  <Header>
+    <Version val="13030.00"/>
+    <WithIsn val="Y"/>
+    <_InternalTask val="N"/>
+    <IsRoot val="N"/>
+    <InIndex val="N"/>
+    <UniqueISNConvState val="12"/>
+  </Header>
+
+  <ProgramsRepository>
+    <Programs>
+      <Task MainProgram="N">
+        <Header Description="Download to Excel" ISN_2="2" LastIsn="8" id="127">
+          <ExecutionRight comp="-1"/>
+          <Resident val="N"/>
+          <SQL val="N"/>
+          <ReturnValue>
+            <ReturnValueAttr MgAttr="A"/>
+            <TSK_PARAMS val="2"/>
+            <ParametersAttributes>
+              <Attr MgAttr="A"/>
+              <Attr MgAttr="N"/>
+            </ParametersAttributes>
+          </ReturnValue>
+          <SqlWhereExist val="N"/>
+          <TaskType val="C"/>
+          <Interactive val="Y"/>
+          <External val="N"/>
+          <Offline val="N"/>
+          <FormType val="D"/>
+          <DotNetObjectExists val="Y"/>
+          <LastModified _date="739392" _time="57169" date="21/05/2025" time="15:52:49"/>
+        </Header>
+        <ReturnValueExpression val="1"/>
+        <ItemIsn val="32"/>
+        <Resource>
+          <DB id="1">
+            <DataObject comp="-1" obj="366"/>
+            <Access val="R"/>
+            <Share val="W"/>
+            <Open val="N"/>
+            <Cache val="Y"/>
+            <IdentifyRowModifications val="84"/>
+          </DB>
+          <Columns>
+            <Column id="2" name="Param">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="1000"/>
+                <Size id="174" val="1000"/>
+                <_Flip id="194"/>
+                <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+            <Column id="9" name="def 3 table,2 all">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_NUMERIC" id="1"/>
+                <Picture id="157" valUnicode="1"/>
+                <_Dec id="181"/>
+                <_Whole id="182" val="1"/>
+                <_Negative id="192"/>
+                <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+            <Column id="1" name="FileName wo Ext">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Range id="98"/>
+                <Picture id="157" valUnicode="200"/>
+                <NullAllowed id="166" val="Y"/>
+                <NullDefault id="169" val="Y"/>
+                <CharSet id="172" val="1"/>
+                <StoredAs id="173" val="3"/>
+                <Size id="174" val="200"/>
+                <Definition id="175" val="2"/>
+                <DatabaseInformation id="177"/>
+                <DbColumnName id="178" val="PeriodStat"/>
+                <Type id="179" val="CHAR(1)"/>
+                <UserType id="180"/>
+                <_Flip id="194"/>
+                <PartOfDatetime id="244"/>
+                <DefaultStorage id="274"/>
+                <Content id="434"/>
+              </PropertyList>
+            </Column>
+            <Column id="6" name="target ext">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="3"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="3"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="3" name="v:TaskVariableList">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_BLOB" id="1"/>
+                <Size id="174" val="28"/>
+                <Definition id="175" val="1"/>
+                <_FieldStyle id="276" val="4"/>
+                <CellModel attr_obj="FIELD_BLOB" comp="-1" id="287" obj="60"/>
+              </PropertyList>
+            </Column>
+            <Column id="4" name="v:TaskVariableListIndex">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_BLOB" id="1"/>
+                <Size id="174" val="28"/>
+                <Definition id="175" val="1"/>
+                <_FieldStyle id="276" val="4"/>
+                <CellModel attr_obj="FIELD_BLOB" comp="-1" id="287" obj="80"/>
+              </PropertyList>
+            </Column>
+            <Column id="5" name="tmp display name">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="40"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="40"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="7" name="column name list">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="2000"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="2000"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="8" name="column display list">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="2000"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="2000"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="10" name="vFormat Numeric">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="30"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="30"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
+            <Column id="11" name="tmpDataTable">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_BLOB" id="1"/>
+                <Size id="174" val="28"/>
+                <Definition id="175" val="1"/>
+                <_FieldStyle id="276" val="5"/>
+                <ObjectType id="478" val="System.Data.DataTable"/>
+              </PropertyList>
+            </Column>
+            <Column id="12" name="tmpParameters">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_BLOB" id="1"/>
+                <Size id="174" val="28"/>
+                <Definition id="175" val="1"/>
+                <_FieldStyle id="276" val="5"/>
+                <ObjectType id="478" val="System.Collections.Hashtable"/>
+              </PropertyList>
+            </Column>
+            <Column id="13" name="maxloop">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_NUMERIC" id="1"/>
+                <Picture id="157" valUnicode="2"/>
+                <_Dec id="181"/>
+                <_Whole id="182" val="2"/>
+                <_Negative id="192"/>
+                <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+            <Column id="14" name="Chart">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_LOGICAL" id="1"/>
+                <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+            <Column id="15" name="loop">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_NUMERIC" id="1"/>
+                <Picture id="157" valUnicode="2"/>
+                <_Dec id="181"/>
+                <_Whole id="182" val="2"/>
+                <_Negative id="192"/>
+                <_FieldStyle id="276" val="1"/>
+              </PropertyList>
+            </Column>
+          </Columns>
+        </Resource>
+        <Information>
+          <Key>
+            <Mode val="N"/>
+          </Key>
+          <DB comp="-1"/>
+          <Sort>
+            <CLS val="A"/>
+          </Sort>
+          <ForceRecordDelete DEL="N"/>
+          <EndTaskCondition val="Y"/>
+          <EvaluateEndCondition val="B"/>
+          <InitialMode val="E"/>
+          <Locate Direction="A"/>
+          <Range Direction="A"/>
+          <VarRange/>
+          <TaskProperties>
+            <SelectionTable val="N"/>
+            <ConfirmUpdate CNFU="N"/>
+            <ConfirmCancel val="N"/>
+            <ErrorStrategy val="R"/>
+            <LockingStrategy val="M"/>
+            <CacheStrategy val="D"/>
+            <ForceRecordSuffix val="N"/>
+            <TransactionMode val="D"/>
+            <TransactionBegin val="P"/>
+            <PreloadView val="N"/>
+            <AllowEmptyDataview val="Y"/>
+            <KeepCreatedContext val="N"/>
+          </TaskProperties>
+          <SIDE_WIN>
+            <AllowOptions val="Y"/>
+            <AllowQuery val="Y"/>
+            <AllowModify val="N"/>
+            <AllowCreate val="N"/>
+            <AllowDelete val="N"/>
+            <AllowLocate val="Y"/>
+            <AllowRange val="Y"/>
+            <AllowIndexChange val="N"/>
+            <AllowSorting val="N"/>
+            <AllowIOFiles val="N"/>
+            <TabbingCycle val="R"/>
+            <AllowEvents val="Y"/>
+            <AllowIndexOptimization val="N"/>
+            <AllowLocationInQuery val="N"/>
+            <AllowPrintingData val="N"/>
+          </SIDE_WIN>
+          <WIN>
+            <OpenTaskWindow val="Y"/>
+            <CloseTaskWindow val="Y"/>
+            <ForegroundWindow val="Y"/>
+            <FlipFld val="N"/>
+            <RefreshTaskWindow ReturnValue="N"/>
+          </WIN>
+          <BOX>
+            <Direction val="V"/>
+          </BOX>
+        </Information>
+        <TaskLogic>
+          <LogicUnit id="1" propagate="78">
+            <Level val="R"/>
+            <Type val="M"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <ExecuteOn_ val="O"/>
+            <LogicLines>
+              <LogicLine>
+                <DATAVIEW_SRC FlowIsn="2" Type="M">
+                  <Condition val="N"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </DATAVIEW_SRC>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="16" FlowIsn="3" id="16">
+                  <Column val="2"/>
+                  <Type val="V"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="23" FlowIsn="58" id="23">
+                  <Column val="9"/>
+                  <Type val="V"/>
+                  <IsParameter val="Y"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="15" FlowIsn="1" id="15">
+                  <Column val="1"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="20" FlowIsn="9" id="20">
+                  <Column val="6"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="17" FlowIsn="5" id="17">
+                  <Column val="3"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="18" FlowIsn="6" id="18">
+                  <Column val="4"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="19" FlowIsn="7" id="19">
+                  <Column val="5"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="21" FlowIsn="13" id="21">
+                  <Column val="7"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="22" FlowIsn="14" id="22">
+                  <Column val="8"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="24" FlowIsn="96" id="24">
+                  <ASS val="24"/>
+                  <Column val="10"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="28" FlowIsn="139" id="28">
+                  <Column val="11"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="29" FlowIsn="140" id="29">
+                  <Column val="12"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="30" FlowIsn="146" id="30">
+                  <Column val="13"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="31" FlowIsn="153" id="31">
+                  <Column val="14"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="32" FlowIsn="207" id="32">
+                  <Column val="15"/>
+                  <Type val="V"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <LNK Direction="A" EVL_CND="R" FlowIsn="134" Key="1" Mode="R" SortType="135" VIEW="16" VIEWS="3">
+                  <DB comp="-1" obj="366"/>
+                  <Expanded val="1"/>
+                  <Condition val="Y"/>
+                </LNK>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="26" FlowIsn="137" id="26">
+                  <Column val="1"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <Locate MAX="28" MIN="28"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="N"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="25" FlowIsn="136" id="25">
+                  <Column val="2"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <Locate MAX="29" MIN="29"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="N"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <Select FieldID="27" FlowIsn="138" id="27">
+                  <Column val="7"/>
+                  <Type val="R"/>
+                  <IsParameter val="N"/>
+                  <REAL_VNAME_TXT val="F_ACTIVE .NET"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="N"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
+                <END_LINK FlowIsn="135"/>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+          <LogicUnit id="3" propagate="78">
+            <Level val="T"/>
+            <Type val="S"/>
+            <Scope val="S"/>
+            <EngineDirective val="S"/>
+            <ShowMessage val="Y"/>
+            <Condition val="89"/>
+            <Event>
+              <EventType val="S"/>
+              <PublicObject comp="-1"/>
+            </Event>
+            <Expanded val="1"/>
+            <ExecuteOn_ val="O"/>
+            <LogicLines>
+              <LogicLine>
+                <Update FlowIsn="59">
+                  <FieldID val="23"/>
+                  <WithValue val="21"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition Exp="22"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="8">
+                  <FieldID val="15"/>
+                  <WithValue val="2"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="10">
+                  <FieldID val="20"/>
+                  <WithValue val="3"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="11">
+                  <FieldID val="17"/>
+                  <WithValue val="4"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="12">
+                  <FieldID val="18"/>
+                  <WithValue val="5"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="16" EndBlockSegment="16" FlowIsn="15" Type="L">
+                  <Condition Exp="6"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="17">
+                  <FieldID val="19"/>
+                  <WithValue val="7"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="19" EndBlockSegment="19" FlowIsn="18" Type="I">
+                  <Condition Exp="8"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="20">
+                  <FieldID val="19"/>
+                  <WithValue val="9"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="21">
+                  <FieldID val="19"/>
+                  <WithValue val="10"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <END_BLK FlowIsn="19"/>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="22">
+                  <FieldID val="21"/>
+                  <WithValue val="11"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="23">
+                  <FieldID val="22"/>
+                  <WithValue val="12"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <END_BLK FlowIsn="16"/>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="28">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="124">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="90" EndBlockSegment="91" FlowIsn="89" Type="I">
+                  <Condition Exp="23"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="33">
+                  <OperationType val="T"/>
+                  <TaskID comp="-1" obj="5"/>
+                  <Lock val="N"/>
+                  <Arguments>
+                    <Argument>
+                      <Expression val="16"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+              <LogicLine>
+                <Evaluate FlowIsn="131">
+                  <Expression val="25"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+              <LogicLine>
+                <Invoke FlowIsn="132">
+                  <OperationType val="O"/>
+                  <Command val="26"/>
+                  <Wait val="N"/>
+                  <Show val="1"/>
+                  <ExecuteOn_ val="S"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Invoke>
+              </LogicLine>
+              <LogicLine>
+                <Evaluate FlowIsn="260">
+                  <Expression val="15"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="133">
+                  <OperationType val="T"/>
+                  <TaskID comp="-1" obj="8"/>
+                  <Lock val="N"/>
+                  <Arguments>
+                    <Argument>
+                      <Expression val="27"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="90" EndBlockSegment="90" FlowIsn="91" Type="E">
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="202">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="298">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="29">
+                  <OperationType val="T"/>
+                  <TaskID comp="-1" obj="3"/>
+                  <Lock val="N"/>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+              <LogicLine>
+                <Evaluate FlowIsn="30">
+                  <Expression val="13"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+              <LogicLine>
+                <Evaluate FlowIsn="296">
+                  <Expression val="14"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="297">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="143" EndBlockSegment="152" FlowIsn="142" Type="I">
+                  <Condition Exp="30"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="93">
+                  <OperationType val="T"/>
+                  <TaskID comp="-1" obj="4"/>
+                  <Lock val="N"/>
+                  <Arguments>
+                    <Argument>
+                      <Expression val="16"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition Exp="18"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+              <LogicLine>
+                <CallTask FlowIsn="35">
+                  <OperationType val="P"/>
+                  <TaskID comp="-1" obj="224"/>
+                  <Lock val="N"/>
+                  <Arguments>
+                    <Argument>
+                      <Expression val="16"/>
+                      <Skip val="N"/>
+                    </Argument>
+                  </Arguments>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <RetainFocus val="N"/>
+                  <Condition Exp="17"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </CallTask>
+              </LogicLine>
+              <LogicLine>
+                <Evaluate FlowIsn="32">
+                  <Expression val="15"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="203">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="143" EndBlockSegment="143" FlowIsn="152" Type="E">
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <Evaluate FlowIsn="36">
+                  <Expression val="19"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="144">
+                  <FieldID val="28"/>
+                  <WithValue val="31"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="145">
+                  <FieldID val="29"/>
+                  <WithValue val="32"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="147">
+                  <FieldID val="30"/>
+                  <WithValue val="33"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <BLOCK EndBlock="149" EndBlockSegment="149" FlowIsn="148" Type="L">
+                  <Condition Exp="34"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </BLOCK>
+              </LogicLine>
+              <LogicLine>
+                <Update FlowIsn="208">
+                  <FieldID val="32"/>
+                  <WithValue val="37"/>
+                  <Incremental val="N"/>
+                  <ForcedUpdate val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Update>
+              </LogicLine>
+              <LogicLine>
+                <Evaluate FlowIsn="150">
+                  <Expression val="35"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+              <LogicLine>
+                <END_BLK FlowIsn="149"/>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="288">
+                  <Type val="2"/>
+                  <Text val="-- Add to Foreground"/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <Invoke FlowIsn="151">
+                  <OperationType val="."/>
+                  <TaskID comp="-1"/>
+                  <Lock val="N"/>
+                  <Arguments>
+                    <Argument>
+                      <Skip val="N"/>
+                      <DotNetType val="void"/>
+                    </Argument>
+                    <Argument>
+                      <Variable val="28"/>
+                      <Skip val="N"/>
+                      <Name val="tbl"/>
+                      <VT_Type val="4"/>
+                      <DotNetType val="System.Data.DataTable"/>
+                    </Argument>
+                    <Argument>
+                      <Variable val="29"/>
+                      <Skip val="N"/>
+                      <Name val="parameters"/>
+                      <VT_Type val="4"/>
+                      <DotNetType val="System.Collections.Hashtable"/>
+                    </Argument>
+                    <Argument>
+                      <Parent val="32768"/>
+                      <Variable val="145"/>
+                      <Skip val="N"/>
+                      <Name val="judul"/>
+                      <VT_Type val="4"/>
+                      <DotNetType val="System.String"/>
+                    </Argument>
+                    <Argument>
+                      <Variable val="31"/>
+                      <Skip val="N"/>
+                      <Name val="showChart"/>
+                      <DotNetType val="System.Boolean"/>
+                    </Argument>
+                    <Argument>
+                      <Variable val="31"/>
+                      <Skip val="N"/>
+                      <Name val="ChartByRow"/>
+                      <DotNetType val="System.Boolean"/>
+                    </Argument>
+                    <Argument>
+                      <Expression val="21"/>
+                      <Skip val="N"/>
+                      <Name val="ChartType"/>
+                      <DotNetType val="System.Int16"/>
+                    </Argument>
+                    <Argument>
+                      <Variable val="24"/>
+                      <Skip val="N"/>
+                      <Name val="reportNumberFormat"/>
+                      <VT_Type val="4"/>
+                      <DotNetType val="System.String"/>
+                    </Argument>
+                  </Arguments>
+                  <Wait val="Y"/>
+                  <SyncData val="N"/>
+                  <FunctionName val="func"/>
+                  <SnippetCode val="using System;&#xA;using System.Data;&#xA;using System.Collections.Generic;&#xA;using Microsoft.Office.Interop.Excel;&#xA;using System.Text.RegularExpressions;&#xA;using System.Runtime.InteropServices;&#xA;using System.Windows.Forms;&#xA;using System.Globalization;&#xA;using System.Collections;&#xA;using System.Drawing;  &#xA;&#xA;public static class Snippet&#xA;{&#xA;&#x9;public static void func(ref System.Data.DataTable tbl, ref System.Collections.Hashtable parameters, ref System.String judul, System.Boolean showChart, System.Boolean ChartByRow, System.Int16 ChartType, ref System.String reportNumberFormat)&#xA;&#x9;{&#x9;&#x9;&#xA;&#x9;&#x9;Microsoft.Office.Interop.Excel._Application excel = null;&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;int rowcount = tbl.Rows.Count;&#xA;&#x9;&#x9;int columncount = tbl.Columns.Count;&#xA;&#x9;&#x9;DateTime jan1900 = new DateTime(1900, 1, 1);&#xA;&#x9;&#x9;DateTime feb1900 = new DateTime(1900, 2, 28);&#xA;        &#xA;&#x9;&#x9;// If there are columns and records&#xA;&#x9;&#x9;if( rowcount>0 &amp;&amp; columncount>0)&#xA;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;// Create Header array&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;var headerData = new object[columncount];&#xA;&#x9;&#x9;&#x9;int iCol = 0;&#xA;&#x9;&#x9;&#x9;foreach (DataColumn c in tbl.Columns)&#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;headerData[iCol] = c.ColumnName;&#xA;&#x9;&#x9;&#x9;&#x9;iCol++;&#xA;&#x9;&#x9;&#x9;}&#xA;&#xA;&#x9;&#x9;&#x9;// Create data array out of the datatable (to improve performance) + Set the Display value instead of Item value&#xA;&#x9;&#x9;&#x9;var data = new object[rowcount, columncount];&#xA;&#x9;&#x9;&#x9;string tmpvalue;&#xA;&#x9;&#x9;&#x9;// string newvalue;&#xA;&#x9;&#x9;&#x9;for (var row = 1; row &lt;= rowcount; row++)&#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;for (var column = 1; column &lt;= columncount; column++)&#xA;&#x9;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;if (tbl.Columns[column-1].DataType == System.Type.GetType(&quot;System.Boolean&quot;))&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;data[row - 1, column - 1] = tbl.Rows[row-1].ItemArray[column-1].ToString();&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;else if (tbl.Columns[column-1].DataType == System.Type.GetType(&quot;System.DateTime&quot;))&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;if ((tbl.Rows[row-1].ItemArray[column-1]).ToString()==&quot;&quot;)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;data[row - 1, column - 1] = &quot;&quot;;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;else&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;DateTime dt = ((System.DateTime)tbl.Rows[row-1].ItemArray[column-1]);&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;// for dates between 1-jan-1900 and 28-feb-1900 excel adds one day &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;// so subtract one day before sending&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;if (dt>=jan1900 &amp;&amp; dt&lt;=feb1900) &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;dt = dt.AddDays(-1);&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;data[row - 1, column - 1] = dt.ToOADate();&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;else if (tbl.Columns[column-1].DataType == System.Type.GetType(&quot;System.Double&quot;))&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;// YRH: Fix for defect - 146283. Added if condition to check isDBNull.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;if (Convert.IsDBNull((tbl.Rows[row-1].ItemArray[column-1])))&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;data[row - 1, column - 1] = &quot;&quot;;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;else&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;data[row - 1, column - 1] = ((System.Double)tbl.Rows[row-1].ItemArray[column-1]).ToString(CultureInfo.InvariantCulture);&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;else &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;tmpvalue=tbl.Rows[row-1].ItemArray[column-1].ToString();&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;data[row - 1, column - 1] = tmpvalue;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;}&#xA;&#xA;&#x9;&#x9;&#x9;// Define the Excel variables&#xA;&#x9;&#x9;&#x9;//Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();&#xA;&#xA;&#x9;&#x9;&#x9;if (excel==null)  //excel has value only in preview - to improve performance&#xA;&#x9;&#x9;&#x9;&#x9;excel = new Microsoft.Office.Interop.Excel.Application();&#xA;&#xA;&#x9;&#x9;&#x9;Microsoft.Office.Interop.Excel.Workbooks books = excel.Workbooks;&#xA;&#x9;&#x9;&#x9;Microsoft.Office.Interop.Excel.Workbook book = books.Add(Type.Missing);&#xA;&#x9;&#x9;&#x9;Microsoft.Office.Interop.Excel.Worksheet sheet = (Microsoft.Office.Interop.Excel.Worksheet)book.ActiveSheet;&#xA;&#x9;&#x9;&#x9;Microsoft.Office.Interop.Excel.ErrorCheckingOptions erroroptions = excel.ErrorCheckingOptions;&#xA;&#xA;&#x9;&#x9;&#x9;// Set the column format to Text for string data (so that large numeric values in string var will appear properly&#xA;&#x9;&#x9;&#x9;// Set the column format to date according to the date format&#xA;&#x9;&#x9;&#x9;for (iCol = 1; iCol &lt;= columncount; iCol++) &#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;if (tbl.Columns[iCol-1].DataType == System.Type.GetType(&quot;System.String&quot;))&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;((Microsoft.Office.Interop.Excel.Range)sheet.Columns[iCol]).NumberFormat = &quot;@&quot;;&#xA;&#x9;&#x9;&#x9;&#x9;else if (tbl.Columns[iCol-1].DataType == System.Type.GetType(&quot;System.DateTime&quot;))&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;((Microsoft.Office.Interop.Excel.Range)sheet.Columns[iCol]).NumberFormat = &quot;m/d/yyyy&quot;;&#xA;&#x9;&#x9;&#x9;&#x9;    else if (tbl.Columns[iCol-1].DataType == System.Type.GetType(&quot;System.Double&quot;))&#xA;    &#x9;&#x9;&#x9;&#x9;{&#xA;        &#x9;&#x9;&#x9;if(string.IsNullOrEmpty(reportNumberFormat))&#xA;        &#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;// With thousands separators and 2 decimal places&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;((Microsoft.Office.Interop.Excel.Range)sheet.Columns[iCol]).NumberFormat = &quot;#,##0.00&quot;;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;else&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;// Format Number depends on parameter from Magic XPA&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;((Microsoft.Office.Interop.Excel.Range)sheet.Columns[iCol]).NumberFormat = reportNumberFormat;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;}&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;// Ignore the warning for numeric value in text format&#xA;&#x9;&#x9;&#x9;erroroptions.NumberAsText = false;&#xA;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;//Set the first line of data (and data header)&#xA;&#x9;&#x9;&#x9;int StartAtRow = 2;  //change this value if you need to add a header before the table title and data&#xA;&#x9;&#x9;&#x9;if (showChart)&#xA;&#x9;&#x9;&#x9;&#x9;StartAtRow = 21;&#xA;&#xA;            Microsoft.Office.Interop.Excel.Range JudulTitleRange = sheet.get_Range((Microsoft.Office.Interop.Excel.Range)sheet.Cells[StartAtRow, 1], (Microsoft.Office.Interop.Excel.Range)sheet.Cells[StartAtRow, columncount]);&#xA;            JudulTitleRange.Merge(true);&#xA;            JudulTitleRange.Value2 = new String[1,1] { {judul} };&#xA;            JudulTitleRange.Cells.Font.Bold = true;&#xA;            JudulTitleRange.Cells.Font.Size = 16;&#xA;            JudulTitleRange.Cells.HorizontalAlignment = Microsoft.Office.Interop.Excel.XlHAlign.xlHAlignCenter;&#xA;&#xA;            StartAtRow += 2;&#xA;&#xA;&#x9;&#x9;&#x9;if (parameters != null &amp;&amp; parameters.Count > 0)&#xA;            {&#xA;&#x9;&#x9;&#x9;    var dataParams = new object[rowcount, columncount];&#xA;                int idxParam = 0;&#xA;&#xA;                foreach(DictionaryEntry item in parameters)&#xA;                {&#xA;                    dataParams[idxParam, 0] = item.Key; &#xA;                    dataParams[idxParam, 1] = item.Value; &#xA;&#xA;                    idxParam += 1;&#xA;                }&#x9;&#x9;&#x9;&#x9;&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;Microsoft.Office.Interop.Excel.Range filterSectionRange = sheet.get_Range((Microsoft.Office.Interop.Excel.Range)sheet.Cells[StartAtRow, 1], (Microsoft.Office.Interop.Excel.Range)sheet.Cells[StartAtRow + parameters.Count, 2]);&#xA;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;&#x9;Microsoft.Office.Interop.Excel.Range filterTitleRange = sheet.get_Range((Microsoft.Office.Interop.Excel.Range)sheet.Cells[StartAtRow, 1], (Microsoft.Office.Interop.Excel.Range)sheet.Cells[StartAtRow, 2]);&#xA;&#x9;&#x9;&#x9;&#x9;filterTitleRange.Merge(true);&#xA;&#x9;&#x9;&#x9;&#x9;filterTitleRange.Value2 = new String[1,1] { {&quot;Filters&quot;} };&#xA;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;&#x9;filterTitleRange.Cells.Font.Bold = true;&#xA;&#x9;&#x9;&#x9;&#x9;filterTitleRange.Cells.Font.Size = 14;&#xA;&#x9;&#x9;&#x9;&#x9;filterTitleRange.Cells.HorizontalAlignment = Microsoft.Office.Interop.Excel.XlHAlign.xlHAlignCenter;&#xA;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;&#x9;StartAtRow += 1;&#xA;&#x9;&#x9;&#x9;&#x9;&#xA;                // Set the header row format to be string  case the header is a numeric value) and write the header array to Excel&#xA;                Microsoft.Office.Interop.Excel.Range startCellParams = (Microsoft.Office.Interop.Excel.Range)sheet.Cells[StartAtRow, 1];&#xA;                Microsoft.Office.Interop.Excel.Range endCellParams = (Microsoft.Office.Interop.Excel.Range)sheet.Cells[StartAtRow + parameters.Count - 1, 2];&#xA;                Microsoft.Office.Interop.Excel.Range writeRangeParams = sheet.get_Range(startCellParams, endCellParams);&#xA;                &#xA;&#x9;&#x9;&#x9;&#x9;writeRangeParams.NumberFormat = &quot;@&quot;;&#xA;                writeRangeParams.Value2 = dataParams;&#xA;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;&#x9;writeRangeParams.Cells.Font.Bold = true;&#xA;&#x9;&#x9;&#x9;&#x9;// writeRangeParams.Cells.BorderAround(Microsoft.Office.Interop.Excel.XlLineStyle.xlContinuous, Microsoft.Office.Interop.Excel.XlBorderWeight.xlThin);&#xA;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;&#x9;filterSectionRange.Borders.Weight = Microsoft.Office.Interop.Excel.XlBorderWeight.xlThin;&#xA;&#x9;&#x9;&#x9;&#x9;filterSectionRange.Borders.LineStyle = Microsoft.Office.Interop.Excel.XlLineStyle.xlContinuous;&#xA;&#x9;&#x9;&#x9;&#x9;//filterSectionRange.Borders.Color = ColorTranslator.ToOle(Color.FromArgb(91, 155, 213));&#xA;&#x9;&#x9;&#x9;&#x9;filterSectionRange.Borders.Color = ColorTranslator.ToOle(Color.Black);&#xA;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;&#x9;StartAtRow += parameters.Count + 2; // Add space 2 rows&#xA;            }&#xA;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;// Set the header row format to be string  case the header is a numeric value) and write the header array to Excel&#xA;&#x9;&#x9;&#x9;Microsoft.Office.Interop.Excel.Range startCell = (Microsoft.Office.Interop.Excel.Range)sheet.Cells[StartAtRow, 1];&#xA;            Microsoft.Office.Interop.Excel.Range endCell = (Microsoft.Office.Interop.Excel.Range)sheet.Cells[StartAtRow, columncount];&#xA;            Microsoft.Office.Interop.Excel.Range writeRange = sheet.get_Range(startCell, endCell);&#xA;&#x9;&#x9;&#x9;writeRange.NumberFormat = &quot;@&quot;;&#xA;&#x9;&#x9;&#x9;writeRange.Value2 = headerData;&#xA;&#xA;&#x9;&#x9;&#x9;//&#x9;Write the data array to Excel&#xA;&#x9;&#x9;&#x9;startCell = (Microsoft.Office.Interop.Excel.Range)sheet.Cells[StartAtRow+1, 1];&#xA;            endCell = (Microsoft.Office.Interop.Excel.Range)sheet.Cells[StartAtRow+1+rowcount-1, columncount];&#xA;            writeRange = sheet.get_Range(startCell, endCell);&#xA;&#x9;&#x9;&#x9;writeRange.Value2 = data;&#xA;&#xA;&#x9;&#x9;&#x9;// Set Table style&#xA;&#x9;&#x9;&#x9;startCell = (Microsoft.Office.Interop.Excel.Range)sheet.Cells[StartAtRow, 1];&#xA;            endCell = (Microsoft.Office.Interop.Excel.Range)sheet.Cells[StartAtRow+1+rowcount-1, columncount];&#xA;            writeRange = sheet.get_Range(startCell, endCell);&#xA;&#x9;&#x9;&#x9;sheet.ListObjects.AddEx(XlListObjectSourceType.xlSrcRange, writeRange, Type.Missing, Microsoft.Office.Interop.Excel.XlYesNoGuess.xlYes, Type.Missing).Name = &quot;MyTableStyle&quot;;&#xA;&#x9;&#x9;&#x9;//sheet.ListObjects.get_Item(&quot;MyTableStyle&quot;).TableStyle = &quot;TableStyleLight9&quot;;&#xA;&#x9;&#x9;&#x9;sheet.ListObjects.get_Item(&quot;MyTableStyle&quot;).TableStyle = &quot;TableStyleLight8&quot;;&#xA;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;// Set width to auto fit&#xA;&#x9;&#x9;&#x9;writeRange.EntireColumn.AutoFit();&#xA;&#x9;&#x9;&#x9;// Increase the column width to default size if its smaller&#xA;            double currentWidth = 0;&#xA;&#x9;&#x9;&#x9;for (iCol = 1; iCol &lt;= columncount; iCol++) &#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;currentWidth = (double)((Microsoft.Office.Interop.Excel.Range)sheet.Columns[iCol]).ColumnWidth;&#xA;&#x9;&#x9;&#x9;&#x9;if (currentWidth &lt; 10)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;((Microsoft.Office.Interop.Excel.Range)sheet.Columns[iCol]).ColumnWidth = 10;&#xA;&#x9;&#x9;&#x9;}&#xA;&#xA;&#x9;&#x9;&#x9;// Add the chart&#xA;&#x9;&#x9;&#x9;if (showChart)&#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;startCell = (Microsoft.Office.Interop.Excel.Range)sheet.Cells[StartAtRow, 1];&#xA;            &#x9;endCell = (Microsoft.Office.Interop.Excel.Range)sheet.Cells[StartAtRow+1+rowcount-1, columncount];&#xA;&#x9;&#x9;&#x9;&#x9;int endRow = StartAtRow+rowcount;&#xA;            &#x9;// writeRange = (Microsoft.Office.Interop.Excel.Range)sheet.Range[&quot;A27:A&quot;+StartAtRow+rowcount+&quot;;C27:C&quot;+StartAtRow+rowcount+&quot;;D27:D&quot;+StartAtRow+rowcount];&#xA;            &#x9;MessageBox.Show(&quot;Formula: &quot; + &quot;A27:A&quot;+(StartAtRow+rowcount)+&quot;;C27:C&quot;+endRow+&quot;;D27:D&quot;+endRow);&#xA;&#x9;&#x9;&#x9;&#x9;writeRange = (Microsoft.Office.Interop.Excel.Range)sheet.Range[&quot;A27:A119;C27:C119;D27:D119&quot;];&#xA;            &#x9;//writeRange = sheet.get_Range(startCell, endCell);&#xA;&#x9;&#x9;&#x9;&#x9;Microsoft.Office.Interop.Excel.ChartObjects xlCharts = (Microsoft.Office.Interop.Excel.ChartObjects)sheet.ChartObjects(Type.Missing);&#xA;&#x9;&#x9;&#x9;&#x9;Microsoft.Office.Interop.Excel.ChartObject myChart = (Microsoft.Office.Interop.Excel.ChartObject)xlCharts.Add(15, 15, 400, 250);&#xA;&#x9;&#x9;&#x9;&#x9;Microsoft.Office.Interop.Excel.Chart chartPage = myChart.Chart;&#xA;&#x9;&#x9;&#x9;&#x9;// The following two lines can set the chart to a dedicated page&#xA;&#x9;&#x9;&#x9;&#x9;//Microsoft.Office.Interop.Excel.Sheets charts = book.Charts;&#xA;&#x9;&#x9;&#x9;&#x9;//Microsoft.Office.Interop.Excel.Chart chartPage = (Chart)charts.Add();&#xA;&#x9;&#x9;&#x9;&#x9;chartPage.HasTitle = true;&#xA;&#x9;&#x9;&#x9;&#x9;//chartPage.ChartTitle.Text = &quot;Title&quot;;&#xA;&#x9;&#x9;&#x9;&#x9;chartPage.SetSourceData(writeRange, (ChartByRow) ? Microsoft.Office.Interop.Excel.XlRowCol.xlRows :Microsoft.Office.Interop.Excel.XlRowCol.xlColumns);&#xA;&#x9;&#x9;&#x9;&#x9;Microsoft.Office.Interop.Excel.XlChartType charttypeEnum = new Microsoft.Office.Interop.Excel.XlChartType();&#xA;&#x9;&#x9;&#x9;&#x9;chartPage.ChartType = (Microsoft.Office.Interop.Excel.XlChartType)System.Enum.GetValues(charttypeEnum.GetType()).GetValue(ChartType); &#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;bool PreviewOnly = false;&#xA;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;// Show Excel and bring it to the foreground (if not preview)&#xA;&#x9;&#x9;&#x9;if (!PreviewOnly)&#xA;&#x9;&#x9;&#x9;{&#xA;&#x9;&#x9;&#x9;&#x9;string caption = excel.Caption;&#xA;&#x9;&#x9;&#x9;&#x9;IntPtr handler = FindWindow(null, caption);&#xA;&#x9;&#x9;&#x9;&#x9;SetForegroundWindow(handler);&#xA;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;&#x9;excel.Visible = true;&#xA;&#x9;&#x9;&#x9;&#x9;// excel.WindowState=XlWindowState.xlMinimized;&#xA;&#x9;&#x9;&#x9;&#x9;// excel.WindowState=XlWindowState.xlNormal;&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;// Release Excel objects&#xA;&#x9;&#x9;&#x9;Marshal.ReleaseComObject(sheet);&#xA;&#x9;&#x9;&#x9;Marshal.ReleaseComObject(book);&#xA;&#x9;&#x9;&#x9;Marshal.ReleaseComObject(books);&#xA;&#x9;&#x9;&#x9;Marshal.ReleaseComObject(erroroptions);&#xA;&#x9;&#x9;&#x9;if (!PreviewOnly)&#xA;&#x9;&#x9;&#x9;&#x9;Marshal.ReleaseComObject(excel);&#xA;&#x9;&#x9;&#x9;GC.Collect();&#xA;&#x9;&#x9;}&#x9;&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;&#xA;&#x9;}&#xA;&#x9;&#xA;&#x9;[DllImport(&quot;user32.dll&quot;)]&#xA;&#x9;[return: MarshalAs(UnmanagedType.Bool)]&#xA;&#x9;static extern bool SetForegroundWindow(IntPtr hWnd);&#xA;&#x9;&#xA;&#x9;[DllImport(&quot;user32.dll&quot;, SetLastError = true)]&#xA;&#x9;static extern IntPtr FindWindow(string lpClassName, string lpWindowName); &#xA;&#xA;}"/>
+                  <CompiledCode val="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BAAABC0lHxDQBQAAAigkAAAK0AIAAAIoJAAACiglAAAKKCsAAAqABAAABH4EAAAEeywAAAp+BAAABBEPbzYAAAYRBowqAAABfi4AAApvDgAABm8wAAAKctkAAHBvGwAABitgfgUAAAQtJR8Q0AUAAAIoJAAACtACAAACKCQAAAooJQAACigrAAAKgAUAAAR+BQAABHssAAAKfgUAAAQRD282AAAGEQaMKgAAAX4uAAAKbw4AAAZvMAAACg4GUG8bAAAGEQYXWBMGEQYIPuH9//8REBZvMQAABhgTEQUsBB8VExERD34GAAAELSUfENAFAAACKCQAAArQAgAAAigkAAAKKCUAAAooKwAACoAGAAAEfgYAAAR7LAAACn4GAAAEEQ9vMwAABhERjCoAAAEXjCoAAAFvDgAABm8wAAAKfgcAAAQtJR8Q0AUAAAIoJAAACtACAAACKCQAAAooJQAACigrAAAKgAcAAAR+BwAABHssAAAKfgcAAAQRD28zAAAGERGMKgAAAQiMKgAAAW8OAAAGbzAAAApvOAAABhMSERIXjCwAAAFvGAAABhESFxdzNwAAChMqESoWFgRQKDgAAAoRKm8eAAAGERJvCQAABm8TAAAGF4wsAAABbz0AAAYREm8JAAAGbxMAAAYfEIwqAAABb0AAAAYREm8JAAAGIPTv//+MDwAAAm8WAAAGEREYWBMRA1A5tgMAAANQbz8AAAoWPqkDAAAHCHMNAAAKExMWExQDUG9AAAAKEysrNhErbwkAAAqlMAAAARMVERMRFBYSFShBAAAKKBUAAAoRExEUFxIVKEIAAAooFQAAChEUF1gTFBErbwsAAAotwd4VESt1FAAAARMsESwsBxEsbwwAAArcEQ9+CAAABC0lHxDQBQAAAigkAAAK0AIAAAIoJAAACiglAAAKKCsAAAqACAAABH4IAAAEeywAAAp+CAAABBEPbzMAAAYREYwqAAABF4wqAAABbw4AAAZvMAAACn4JAAAELSUfENAFAAACKCQAAArQAgAAAigkAAAKKCUAAAooKwAACoAJAAAEfgkAAAR7LAAACn4JAAAEEQ9vMwAABhERA1BvPwAACliMKgAAARiMKgAAAW8OAAAGbzAAAApvOAAABhMWEQ9+CgAABC0lHxDQBQAAAigkAAAK0AIAAAIoJAAACiglAAAKKCsAAAqACgAABH4KAAAEeywAAAp+CgAABBEPbzMAAAYREYwqAAABF4wqAAABbw4AAAZvMAAACn4LAAAELSUfENAFAAACKCQAAArQAgAAAigkAAAKKCUAAAooKwAACoALAAAEfgsAAAR7LAAACn4LAAAEEQ9vMwAABhERjCoAAAEYjCoAAAFvDgAABm8wAAAKbzgAAAYTFxEXF4wsAAABbxgAAAYRFxcXczcAAAoTLREtFhZy6wAAcCg4AAAKES1vHgAABhEXbwkAAAZvEwAABheMLAAAAW89AAAGERdvCQAABm8TAAAGHw6MKgAAAW9AAAAGERdvCQAABiD07///jA8AAAJvFgAABhERF1gTEX4MAAAELSUfENAFAAACKCQAAArQAgAAAigkAAAKKCUAAAooKwAACoAMAAAEfgwAAAR7LAAACn4MAAAEEQ9vMwAABhERjCoAAAEXjCoAAAFvDgAABm8wAAAKExh+DQAABC0lHxDQBQAAAigkAAAK0AIAAAIoJAAACiglAAAKKCsAAAqADQAABH4NAAAEeywAAAp+DQAABBEPbzMAAAYREQNQbz8AAApYF1mMKgAAARiMKgAAAW8OAAAGbzAAAAoTGREPERgRGW84AAAGExoRGnLDAABwbxsAAAYRGhETbx4AAAYRGm8JAAAGbxMAAAYXjCwAAAFvPQAABhEWbwcAAAYYjBEAAAJvSQAABhEWbwcAAAYXjBIAAAJvRgAABhEWbwcAAAYoRgAACihHAAAKjCoAAAFvQwAABhERA1BvPwAAChhYWBMRfg4AAAQtJR8Q0AUAAAIoJAAACtACAAACKCQAAAooJQAACigrAAAKgA4AAAR+DgAABHssAAAKfg4AAAQRD28zAAAGERGMKgAAAReMKgAAAW8OAAAGbzAAAAoTG34PAAAELSUfENAFAAACKCQAAArQAgAAAigkAAAKKCUAAAooKwAACoAPAAAEfg8AAAR7LAAACn4PAAAEEQ9vMwAABhERjCoAAAEIjCoAAAFvDgAABm8wAAAKExwRDxEbERxvOAAABhMdER1ywwAAcG8bAAAGER0RBW8eAAAGfhAAAAQtJR8Q0AUAAAIoJAAACtACAAACKCQAAAooJQAACigrAAAKgBAAAAR+EAAABHssAAAKfhAAAAQRD28zAAAGEREXWIwqAAABF4wqAAABbw4AAAZvMAAAChMbfhEAAAQtJR8Q0AUAAAIoJAAACtACAAACKCQAAAooJQAACigrAAAKgBEAAAR+EQAABHssAAAKfhEAAAQRD28zAAAGEREXWAdYF1mMKgAAAQiMKgAAAW8OAAAGbzAAAAoTHBEPERsRHG84AAAGEx0RHREIbx4AAAZ+EgAABC0lHxDQBQAAAigkAAAK0AIAAAIoJAAACiglAAAKKCsAAAqAEgAABH4SAAAEeywAAAp+EgAABBEPbzMAAAYREYwqAAABF4wqAAABbw4AAAZvMAAAChMbfhMAAAQtJR8Q0AUAAAIoJAAACtACAAACKCQAAAooJQAACigrAAAKgBMAAAR+EwAABHssAAAKfhMAAAQRD28zAAAGEREXWAdYF1mMKgAAAQiMKgAAAW8OAAAGbzAAAAoTHBEPERsRHG84AAAGEx0RD286AAAGFxEdfiIAAAoXfiIAAAp+LgAACm9NAAAGcvsAAHBvUAAABhEPbzoAAAZy+wAAcG9LAAAGchUBAHBvUwAABhEdbxEAAAZvBQAABiYjAAAAAAAAAAATHhcTBjgWAQAAfhQAAAQtJR8Q0BgAAAEoJAAACtACAAACKCQAAAooJQAACihQAAAKgBQAAAR+FAAABHtRAAAKfhQAAAR+FQAABC0lHxDQBQAAAigkAAAK0AIAAAIoJAAACiglAAAKKCsAAAqAFQAABH4VAAAEeywAAAp+FQAABBEPbzYAAAYRBowqAAABfi4AAApvDgAABm8wAAAKbwsAAAZvUwAAChMeER4jAAAAAAAAJEA0ZH4WAAAELSUfENAFAAACKCQAAArQAgAAAigkAAAKKCUAAAooKwAACoAWAAAEfhYAAAR7LAAACn4WAAAEEQ9vNgAABhEGjCoAAAF+LgAACm8OAAAGbzAAAAofCowqAAABbwwAAAYRBhdYEwYRBgg+4v7//wU58QEAAH4XAAAELSUfENAFAAACKCQAAArQAgAAAigkAAAKKCUAAAooKwAACoAXAAAEfhcAAAR7LAAACn4XAAAEEQ9vMwAABhERjCoAAAEXjCoAAAFvDgAABm8wAAAKExt+GAAABC0lHxDQBQAAAigkAAAK0AIAAAIoJAAACiglAAAKKCsAAAqAGAAABH4YAAAEeywAAAp+GAAABBEPbzMAAAYRERdYB1gXWYwqAAABCIwqAAABbw4AAAZvMAAAChMcEREHWBMfHI0BAAABEy4RLhZyNwEAcKIRLhcREQdYjCoAAAGiES4YclUBAHCiES4ZER+MKgAAAaIRLhpyYwEAcKIRLhsRH4wqAAABohEuKFUAAAooVgAACiYRD3JxAQBwfi4AAApvOAAABhMdfhkAAAQtJR8Q0AYAAAIoJAAACtACAAACKCQAAAooJQAACihXAAAKgBkAAAR+GQAABHtYAAAKfhkAAAQRD34iAAAKbzQAAAZvWgAAChMgESAjAAAAAAAALkAjAAAAAAAALkAjAAAAAAAAeUAjAAAAAABAb0BvIAAABhMhESFvVQAABhMiESIXb1gAAAYRIhEdDgQtAxgrAReMGgAAAm9dAAAGFhMjESIRI4wbAAACKF8AAAooYAAACg4Fb2EAAAqlGwAAAm9bAAAGFhMkESQtIQZvJAAABhMlFBElKAMAAAYTJhEmKAIAAAYmBhdvKAAABhEPKGUAAAomEQ4oZQAACiYRDShlAAAKJhEQKGUAAAomESQtBwYoZQAACiYoZgAACioAARwAAAIAYAAtjQAVAAAAAAIA6AZDKwcVAAAAAEJTSkIBAAEAAAAAAAwAAAB2NC4wLjMwMzE5AAAAAAUAbAAAAIwbAAAjfgAA+BsAANgUAAAjU3RyaW5ncwAAAADQMAAAqAEAACNVUwB4MgAAEAAAACNHVUlEAAAAiDIAAOwOAAAjQmxvYgAAAAAAAAACAAABVz+iHQkCAAAA+iUzABYAAAEAAABUAAAAIwAAAIYAAABdAAAAUQAAAA0AAAByAAAAaAAAAK8AAAA9AAAAAQAAAAsAAAAeAAAALwAAAAEAAAAKAAAAAgAAAAEAAAAGAAAAAQAAAAAACgABAAAAAAAGAC8AKAAKAEIANgAGAF8ATAAGAPMA1AAGAAYB1AAGAFgBOAEGAHgBOAEOAMMBOAEGAM4BKAAOANUBOAEEAN4B6AEEABIC6AEEAB4D6AEKADcDNgAKAFIDNgAKAHcDNgAGAJgDKAAGAKEDTAAKAMcDNgAGAOoDKAAGAAcEKAAKAC0ENgAGAFAEKAAGAJEEKAAGAJgEKAAGAL4EqQQGAN8EKAAGAO8EKAAGAPQE1AAGAA0FKAAEACYF6AEEADIF6AEEAD8F6AEEAF8F6AEGAGwFKAASAMAFoQUOAMcFOAESANYFoQUEAPYF6AEEABcG6AEEAEUG6AEGAFAGKAAGAFcFVgYGAL8GKAAEANgG6AEEAPgG6AEGABkHTAAGAC8HTAAEAFEH6AEEAGUH6AEEAH8H6AEWAKgHmQcWALgHmQcEANgH6AEEAPQH6AEEAP8H6AEEABYI6AEaAJYIgQgaAKEIgQgEALMI6AEEAL8I6AEEAM8I6AEEAOMI6AEEAPoI6AEGAAYJKAAGAAsJKAAGAFsJKAAGAGYJ1AAGAIQJOAEEAJ8J6AEGAK8J1AAGAL0J1AAGANUJ1AAGAOgJ1AAGAPkJTAAGABIK1AAGAFULVgYGAGwL1AAGAIML1AAEALcL6AEGAAsM1AAEAFUM6AEEAGoP6AEGAI4U1AAAAAAAAQAAAAAAAQABAIEBEAAXAAAABQABAAEAgwEQAJ8BAAAFAAEABAChEAAA3gHoAQAAGgAEAKEQAAASAugBAAAaAAQAoRAAAB4D6AEAABoAHwChEAAAJgXoAQAAGgAhAKEQAAAyBegBAAAaACEAoRAAAD8F6AEAABoAKwChEAAAXwXoAQAAGgAtAKEQAAD2BegBAAAaAC0AoRAAABcG6AEAABoALwChEAAARQboAQAAGgAyAKEQAADYBugBAAAaADsAAQEAAPgG6AEFARoAQQChEAAAUQfoAQAAIwBBAAEBAABlB+gBBQEjAEoAAQEAAH8H6AEFASgASgChEAAA2AfoAQAAMQBKAKEQAAD0B+gBAAAxAE4AAQEAAP8H6AEFATEAVAABAQAAFgjoAQUBNgBUAKEQAACzCOgBAAA6AFQAoRAAAL8I6AEAADoAVgChEAAAzwjoAQAAOgBWAAEBAADjCOgBBQE6AF4AAQEAAPoI6AEFAT0AXgChEAAAnwnoAQAAhwBeAKEQAAC3C+gBAACHAF4AoRAAAFUM6AEAAIcAXgChEAAAag/oAQAAhwBeAKEQAACpFOgBAACHAF4AoRAAALMU6AEAAIcAXgChEAAAvxToAQAAhwBeAKEQAADJFOgBAACHAF4AFgAHAjcAFgAYAkYAFgAjAkYAFgAuAkYAFgA5AkYAFgBEAkYAFgBPAkYAFgBaAkYAFgBlAkYAFgBwAkYAFgB7AkYAFgCGAkYAFgCRAkYAFgCcAkYAFgCnAkYAFgCyAkYAFgC+AkYAFgDKAkYAFgDWAkYAFgDiAlUAFgDuAkYAFgD6AkYAFgAGA0YAFgASA0YAFgArA2MABgYiDckFVoAqDcwFVoA5DcwFVoBXDcwFVoBrDcwFVoB4DcwFVoCIDcwFVoCYDcwFVoClDcwFBgYiDckFVoDzDZAGVoD+DZAGVoAHDpAGVoAPDpAGBgYiDckFVoAWDvsGVoAjDvsGVoAqDvsGVoA0DvsGVoBBDvsGVoBHDvsGVoBQDvsGVoBfDvsGBgYiDckFVoAdD+cHVoArD+cHVoA2D+cHVoA/D+cHBgYiDckFVoBKD1AIVoBSD1AIVoBXD1AIBgYiDckFVoDODzEJVoDYDzEJBgYiDckFVoDfD4cJVoDxD4cJVoABEIcJVoAUEIcJVoAoEIcJVoA6EIcJVoBPEIcJVoBeEIcJVoBrEIcJVoB7EIcJVoCMEIcJVoCbEIcJVoCtEIcJVoC7EIcJVoDMEIcJVoDaEIcJVoDvEIcJVoAHEYcJVoASEYcJVoAgEYcJVoAwEYcJVoA7EYcJVoBNEYcJVoBoEYcJVoB5EYcJVoCTEYcJVoChEYcJVoCyEYcJVoDCEYcJVoDVEYcJVoDoEYcJVoD3EYcJVoAFEocJVoAPEocJVoAiEocJVoAzEocJVoBNEocJVoBWEocJVoBnEocJVoByEocJVoB+EocJVoCKEocJVoCXEocJVoCuEocJVoDDEocJVoDbEocJVoDyEocJVoAHE4cJVoAfE4cJVoAtE4cJVoBAE4cJVoBRE4cJVoBlE4cJVoB4E4cJVoCJE4cJVoCdE4cJVoCnE4cJVoC9E4cJVoDRE4cJVoDoE4cJVoD+E4cJVoASFIcJVoApFIcJVoA2FIcJVoBBFIcJVoBIFIcJVoBRFIcJVoBZFIcJVoBfFIcJVoBrFIcJVoB0FIcJVoB7FIcJVoCGFIcJUCAAAAAAlgBpAAoAAQAAAAAAgACRIG4AGwAIAAAAAACAAJEgggAgAAoAAAAAAAAABhgFCjMADAAAAAAAgADGBVIIjAAMAAAAAAAAAAYYIgozAA0AAAAAAIAAxg1ZB8UBDQAAAAAAAAAGGC4KMwAOAAAAAACAAMYNqwZ7AQ4AAAAAAAAABhg6CjMADwAAAAAAgADGDVoIjAAPAAAAAACAAMYNagiVARAAAAAAAAAABhhNCjMAEQAAAAAAgADGDW4GhQERAAAAAACAAMYNbwqPAxQAAAAAAAAABhh8CjMAFwAAAAAAgADGDUEIewEXAAAAAAAAAAYYiAozABgAAAAAAIAAxg3dBroBGAAAAAAAAAAGGJQKMwAZAAAAAACAAMYNoQqMABkAAAAAAIAAxg0BB5UBGgAAAAAAAAAGGLkKMwAbAAAAAACAAMYFxwaVARsAAAAAAAAABhjNCjMAHAAAAAAAgADGDdsKjAAcAAAAAACAAMYNewaVAR0AAAAAAAAABhjsCjMAHgAAAAAAgADGDfoKjAAeAAAAAACAAMYNzQaVAR8AAAAAAAAABhiUCzMAIAAAAAAAgADGBWgFLwIgAAAAAAAAAAYYxwszACUAAAAAAAAAxg1JBQsBJQAAAAAAAAAGGNQLMwAmAAAAAAAAAMYNMgmQACYAAAAAAAAAxg3hC/kAJwAAAAAAAAAGGPELMwAoAAAAAAAAAMYN/wuUACgAAAAAAAAAxg0+CZ8BKAAAAAAAAAAGGCMMMwApAAAAAAAAAMYNLAZoASkAAAAAAAAABhhADDMAKgAAAAAAAADGBWgFEwEqAAAAAAAAAAYYagwzACwAAAAAAAAAxg0ABowALAAAAAAAAAAGGIIMMwAtAAAAAACAAMYNjwyUAC0AAAAAAIAAxg2aBp8BLQAAAAAAAAAGGMcLMwAuAAAAAAAAAMYNqwZ7AS4AAAAAAAAAxgUeAyACLwAAAAAAAAAGGLMMMwAxAAAAAAAAAMYNjAN7ATEAAAAAAAAABhi/DDMAMgAAAAAAAADGDbUGpAEyAAAAAAAAAAYY2AwzADUAAAAAAAAAxg3kB9cBNQAAAAAAAAAGGO0MMwA2AAAAAACAAMYN+QyMADYAAAAAAIAAxg3mBpUBNwAAAAAAAAAGGAINMwA4AAAAAACAAMYNDw2MADgAAAAAAIAAxg3vBpUBOQAAAAAAAAAGGEAMMwA6AAAAAACAAMYNsw2MADoAAAAAAIAAxg3OB5UBOwAAAAAAAAAGGLMMMwA8AAAAAACAAMYNvQ2MADwAAAAAAIAAxg2LB5UBPQAAAAAAAAAGGMsNMwA+AAAAAACAAMYN1w2MAD4AAAAAAIAAxg10B5UBPwAAAAAAAAAGGG8OMwBAAAAAAACAAMYN/gPpAUAAAAAAAAAABhh7DjMAQgAAAAAAgADGBSMI3AFCAAAAAAAAAAYY2w4zAEkAAAAAAIAAxg3oDpAASQAAAAAAgADGDSkI+QBKAAAAAAAAAAYY8Q4zAEsAAAAAAIAAxg3+DowASwAAAAAAgADGDTIIlQFMAAAAAAAAAAYYXQ8zAE0AAAAAAIAAxg3FCDgCTQAAAAAAAAAGGHwPMwBOAAAAAAAAAMYNiQ+UAE4AAAAAAAAAxg3WCJ8BTgAAAAAAAAAGGJYPMwBPAAAAAAAAAMYNow8VCU8AAAAAAAAAxg0kCVECTwAAAAAAAAAGGLEPMwBQAAAAAAAAAMYF7Ag9AlAAAAABAI0AAAACAJEAAAADAJwAAAAEAKIAAAAFAKwAAAAGALcAAAAHAMEAACAAAAAAAAABABoBAAABAB8BAAACACsBACAAAAAAACAAAAAAACAAAAAAACAAAAAAASABAEcKACAAAAAAESABAFoKESACAGMKESABAFoKESACAGMKESADAEcKACAAAAAAACAAAAAAACAAAAAAASABAEcKESABAMYKACAAAAAAASABAEcKACAAAAAAASABAEcKACAAAAAAAQABAKELAQACAKYLAQADAKoLAQAEALALACAAAAAAACAAAAAAASABAO0LAQABAO0LACAAAAAAACAAAAAAESABAEwMACAAAAAAAQABAEcKACAAAAAAACAAAAAAESABAK0MACAAAAAAACAAAAAAASABAMwMESACANIMACAAAAAAACAAAAAAASABAEcKACAAAAAAASABAEcKACAAAAAAASABAEcKACAAAAAAASABAEcKACAAAAAAASABAEcKACAAAAAAASABAK0MACAAAAAAERABAIcOESACAJIOESADAJkOERAEAKQOESAFALsOESAGAMcOACAAAAAAASABAEcKACAAAAAAASABAEcKACAAAAAAAQABAO0LAQABAO0LASABAJIOESACAL4PBAA0AAQAcAAFAC0BBgAtAQcAIAAHAHQACQAtAQoALAAKAHgAEAAtARMALQEYAGQAGAB8ACEAFAEmADEAFAEuADkAFAEzABEASQNyAHkAbQN3ABEAjAN7AIkAFAGAAHkArQOHAJEAuwOMAJkA0gOQAJEA4QOUAKEA9gMzAAwAFAGgAIEA/gOmAJkADASsAKkAGQSxAKkAIQS3AHEA/gO/ALEANQTFAAkAQwSQAAwATATKALkAIQTRAIkAVwTXAIkAbQTXAIkAgATfAIkAiATlAMkAoATpANEAygTuAMEAQwTzAOEAFAH5AOkA/AT+APEAFwUFARMBSQULAakAVwUQAWMBaAUTAakAfgUZASEBmAQqARQA6AVFARQA7wVRAXMBAAaMABwAEAZfAVMBLAZoASQA6AVFASQA7wVRAbMBjAN7AVkBaAaAAXMAbgaFASwAEAZfAdsAewaVAbkAjAaaAYsBmgafAZsBqwZ7AcMBtQakAcMAxwaVATQAFAGgADQATASzAfMAzQaVAUsAqwZ7AZsA3Qa6AesB5gaVAQMC7waVAbMAAQeVARkAbQN3ABkArQO/AYEBPweMAIEBRweMADsAWQfFAUsCdAeVATMCiweVAaEBrgfKAakByAfQARsCzgeVAdMB5AfXAWsCIwjcAYMCKQj5AFsC/gPpAZsCMgiVAYsAQQh7ASsAUgiMADwA6AVFATwA7wVRAVsAWgiMAEQAEAZfAWMAagiVAbkAeggFAtEBrggLAkwA6AVFAUwA7wVRAaMBHgMgAlQAEAZfAQMBaAUvAqsCxQg4AsMC1gifAesC7Ag9AgkAGQSsAAkCEQlEAhECGwlMAtsCJAlRAiMBMgmQAEMBPgmfAekASglXAhkCXglcAiECFAH5ACkCFAEzADkCFAH5AEECFAEzAEkCFAEzAFECFAH4AmECFAEuAGkCFAH5AHECFAEdBIkCFAEuAEECFAHzBaECFAGXCwgAbADQBQgAcADVBQgAdADaBQgAeADfBQgAfADJAggAgADkBQgAhADpBQgAiADuBQgAkADJAggAlACUBggAmACZBggAnACeBggApADJAggAqAD/BggArACZBggAsADfBQgAtAAEBwgAuAAJBwgAvAAOBwgAwAATBwgAyAB2BwgAzADJAggA0ACeBggA1ADrBwgA3AB2BwgA4ACeBggA5ADJAggA7ACeBggA8ADJAggA+ACLCQgA/ACQCQgAAAGVCQgABAGaCQgACAGfCQgADAGkCQgADQHJAggAEAGpCQgAFAGuCQgAGAGzCQgAGQF2BwgAHAG4CQgAIAG9CQgAJAHCCQgAKAHHCQgALAHMCQgAMAHRCQgANAHWCQgAOAHbCQgAPAHgCQgAQAHlCQgARAHqCQgASAHvCQgATAH0CQgAUAH5CQgAVAH+CQgAWAEDCggAXAEICggAYAENCggAZAESCggAaAEXCggAbAEcCggAcAEhCggAdAEmCggAeAErCggAfAEwCggAgAE1CggAhAE6CggAiAE/CggAjAFECggAkAFJCggAlAFOCggAmAFTCggAnAFYCggAoAFdCggApAFiCggAqAFnCggArAFsCggAsAFxCggAtAF2CggAuAF7CggAvAGACggAwAGFCggAxAGKCggAyAGPCggAzAGUCggA0AGZCggA1AGeCggA2AGjCggA3AGoCggA4AGtCggA5AGyCggA6AG3CggA7AG8CggA8AHBCggA9AHGCggA+AGZBggA/AHLCggAAALQCggABALfBQgACALVCggADALaCggAEALJAggAFALfCggAGALkCi4AEwDDDi4AGwDMDmMAQwPJAoMAUwPJAoMASwPOAoMAYwP+AoMAQwPJAqAAawNeA6MAcwMPBKMAQwPJAqMAUwPJAqMAewMkBKMASwPlA8MAQwPJAsMAcwMPBMMAUwPJAsMAewMkBMMASwM2BOAAawNpA+MAUwPJAuMASwNgBOMAQwPJAuMAYwP+AgMBcwMPBAMBQwPJAgMBSwNgBAMBUwPJAiABawN0AyMBSwPLBCMBcwMPBCMBUwPJAiMBQwPJAkMBSwP1BEMBUwPJAkMBYwP+AkMBQwPJAmABawN9A2MBUwPJAmMBQwPJAmMBSwP1BIABawN9A4MBUwPJAoMBewMkBIMBQwPJAoMBSwMzBaMBQwPJAqMBSwPOAqMBUwPJAsABawOGA8MBewMkBMMBSwOfBcMBQwPJAsMBUwPJAuABawOGA+MBiwP5BeMBQwPJAgMCQwPJAgMCcwMPBAMCUwPJAgMCSwNmBgMCewMkBCACawOWAyMCiwOjBiMCQwPJAkMCQwPJAkMCiwMYB2ACawOfA2MCewMkBGMCUwPJAmMCSwOBB2MCQwPJAmMCcwMPBIMCSwO9B4MCcwMPBIMCUwPJAoMCewMkBIMCQwPJAqACawOoA6MCQwPJAqMCiwPwB8ACawOoA8MCiwNUCMMCQwPJAuMCQwPJAuMCUwPJAuMCewMkBOMCSwO4CAADawOxAwMDYwP+AgMDSwPiCAMDQwPJAgMDUwPJAiMDQwPJAiMDSwPiCCMDUwPJAkADawO6A0MDQwPJAkMDiwM1CWADawO6A2MDQwPJAmMDiwPpCoMDkwOfC4MDQwPJAoMDiwM+C6ADawPDA6MDQwPJAqMDkwNPDKMDiwP2C8ADawPDA8MDkwMEDcMDQwPJAsMDiwOmDOMDiwNlDeMDQwPJAuMDkwPADQAEawMtBAMEQwPJAgMEewMkBAMEUwPJAgMESwMbDiMEUwPJAiMEewMkBCMESwNFDiMEQwPJAkAEawOKBEMESwNvDkMEUwPJAkMEewMkBEMEQwPJAmMEewMkBGMEUwPJAmMESwOZDmMEQwPJAoAEawOTBKAEawOTBOAEawOeBOAEgwOGAwAFawOeBAAFgwOGA0AFawOnBIAFawMtBIAFgwPCBMAFawMfBQAGawMqBSAGawMqBWAGawN0A4AGgwPCBIAGawNdBcAGawNmBQAHawNvBUAHawN4BYAHawONBaAHawONBeAHawOWBQAIawOWBUAIawNLBmAIawNLBqAIawNUBsAIawNUBgAJawNdBiAJawNdBmAJawNtB6AJawMtBOAJawOrBwAKawOrB0AKawO0B2AKawO0B6AKawOqCOAKgwOGA+AKawMMCQALgwOGAwALawMMCUALawMaCWALawMaCaALawMjCREALAAZAGcDGwByAx0AcgMfAGcDIQBnAyMAZwMlAGcDJwBnAykAZwMrAGcDLQBnAy8AcgMxAHIDMwBnAzUAZwM3AGcDOQBnAzsAZwM9AGcDPwBnA0EAcgNLAHIDTQCcBE8AnARTAHIDVQByA1cAZwNZACgFXQByA18AKAVhAGcDYwByA2UAcgNnAGcDaQBnA2sAcgNtAGcDbwBnA3EAZwNzAGcDdQBnA3cAZwN5AGcDewBnA30AZwN/AGcDgQByA4MAZwOFAHIDiQBnA4sAZwOPAGcDkQBnA5MAnASVAJwElwBnA5kAZwObAHIDoQByA6MAZwNgAgUAAQAIAAoACwAOAAwADwANABAADgAUABAAFgATABkAFAAaABcAHAAZAB0AAABRB8wDAAAFC9EDAAALC9YDAAAXC9oDAAAgC9EDAADYBuADAAAtC9YDAABBC9YDAABOC9YDAAA/BbAEAAAwDLUEAAA4DLkEAAAXBr0EAAB2DNYDAACgDLkEAAAFC9EDAADlDNEDAAASAoEFAADYB4gFAAAYDdYDAAAdDdYDAACoB9YDAADiDdYDAADsDdYDAADWDnsHAAAND7UEAAASD9YDAAC/CLMIAADFD7kEAAC3ACwJAgAHAAMAAgAJAAUAAgALAAcAAQAMAAcAAgAOAAkAAQAPAAkAAgARAAsAAgATAA0AAgAVAA8AAQAWAA8AAQAbABEAAgAaABEAAgAdABMAAQAeABMAAgAiABUAAQAlABcAAgAkABcAAgAnABkAAQAoABkAAgAqABsAAgAuAB0AAgAwAB8AAQAxAB8AAgAzACEAAgA2ACMAAgA4ACUAAgA6ACcAAgA8ACkAAQA9ACkAAgA/ACsAAQBAACsAAQBDAC0AAgBCAC0AAgBFAC8AAQBGAC8AAgBIADEAAQBJADEAAgBLADMAAgBPADUAAQBQADUAAQBTADcAAgBSADcAAgBVADkAAgBXADsAAQBYADsAAgBaAD0AAQBbAD0AeQmYADcBVQFtAYsBqwHvAfwBEgIlAgABBQBuAAEAQAEHAIIAAQAEgAAAAAAAAAAAAAAAAAAAAACWAQAABAAAAAAAAAAAAAAAAQAfAAAAAAAEAAAAAAAAAAAAAAABADYAAAAAAAQAAAAAAAAAAAAAAAEAtwEAAAAABAAAAAAAAAAAAAAAIQGQBQAAAAAEAAAAAAAAAAAAAAAhAZkHAAAAAAQAAAAAAAAAAAAAAAEAgQgAAAAAAwACAAAAADxNb2R1bGU+AGJnZ3Y0bHNnLmRsbABTbmlwcGV0AG1zY29ybGliAFN5c3RlbQBPYmplY3QAU3lzdGVtLkRhdGEARGF0YVRhYmxlAFN5c3RlbS5Db2xsZWN0aW9ucwBIYXNodGFibGUAZnVuYwBTZXRGb3JlZ3JvdW5kV2luZG93AEZpbmRXaW5kb3cAdGJsAHBhcmFtZXRlcnMAanVkdWwAc2hvd0NoYXJ0AENoYXJ0QnlSb3cAQ2hhcnRUeXBlAHJlcG9ydE51bWJlckZvcm1hdABTeXN0ZW0uUnVudGltZS5JbnRlcm9wU2VydmljZXMATWFyc2hhbEFzQXR0cmlidXRlAFVubWFuYWdlZFR5cGUALmN0b3IAaFduZABscENsYXNzTmFtZQBscFdpbmRvd05hbWUAU3lzdGVtLlJ1bnRpbWUuQ29tcGlsZXJTZXJ2aWNlcwBDb21waWxhdGlvblJlbGF4YXRpb25zQXR0cmlidXRlAFJ1bnRpbWVDb21wYXRpYmlsaXR5QXR0cmlidXRlAGJnZ3Y0bHNnADxmdW5jPm9fX1NpdGVDb250YWluZXIwAFN5c3RlbS5Db3JlAENhbGxTaXRlYDEARnVuY2AzAENhbGxTaXRlAFdvcmtzaGVldABNaWNyb3NvZnQuT2ZmaWNlLkludGVyb3AuRXhjZWwAPD5wX19TaXRlMQBSYW5nZQA8PnBfX1NpdGUyADw+cF9fU2l0ZTMAPD5wX19TaXRlNAA8PnBfX1NpdGU1ADw+cF9fU2l0ZTYAPD5wX19TaXRlNwA8PnBfX1NpdGU4ADw+cF9fU2l0ZTkAPD5wX19TaXRlYQA8PnBfX1NpdGViADw+cF9fU2l0ZWMAPD5wX19TaXRlZAA8PnBfX1NpdGVlADw+cF9fU2l0ZWYAPD5wX19TaXRlMTAAPD5wX19TaXRlMTEAPD5wX19TaXRlMTIAPD5wX19TaXRlMTMAPD5wX19TaXRlMTQAPD5wX19TaXRlMTUAPD5wX19TaXRlMTYAPD5wX19TaXRlMTcAPD5wX19TaXRlMTgAQ2hhcnRPYmplY3RzADw+cF9fU2l0ZTE5AERhdGFSb3dDb2xsZWN0aW9uAGdldF9Sb3dzAEludGVybmFsRGF0YUNvbGxlY3Rpb25CYXNlAGdldF9Db3VudABEYXRhQ29sdW1uQ29sbGVjdGlvbgBnZXRfQ29sdW1ucwBEYXRlVGltZQBJRW51bWVyYXRvcgBHZXRFbnVtZXJhdG9yAGdldF9DdXJyZW50AERhdGFDb2x1bW4AZ2V0X0NvbHVtbk5hbWUATW92ZU5leHQASURpc3Bvc2FibGUARGlzcG9zZQBnZXRfSXRlbQBUeXBlAGdldF9EYXRhVHlwZQBHZXRUeXBlAG9wX0VxdWFsaXR5AERhdGFSb3cAZ2V0X0l0ZW1BcnJheQBUb1N0cmluZwBTZXQAU3RyaW5nAG9wX0dyZWF0ZXJUaGFuT3JFcXVhbABvcF9MZXNzVGhhbk9yRXF1YWwAQWRkRGF5cwBUb09BRGF0ZQBEb3VibGUAQ29udmVydABJc0RCTnVsbABTeXN0ZW0uR2xvYmFsaXphdGlvbgBDdWx0dXJlSW5mbwBnZXRfSW52YXJpYW50Q3VsdHVyZQBJRm9ybWF0UHJvdmlkZXIAR3VpZABNYXJzaGFsAEdldFR5cGVGcm9tQ0xTSUQAQWN0aXZhdG9yAENyZWF0ZUluc3RhbmNlAEFwcGxpY2F0aW9uAF9BcHBsaWNhdGlvbgBXb3JrYm9va3MAZ2V0X1dvcmtib29rcwBNaXNzaW5nAFdvcmtib29rAEFkZABSdW50aW1lVHlwZUhhbmRsZQBHZXRUeXBlRnJvbUhhbmRsZQBNaWNyb3NvZnQuQ1NoYXJwAE1pY3Jvc29mdC5DU2hhcnAuUnVudGltZUJpbmRlcgBCaW5kZXIAQ2FsbFNpdGVCaW5kZXIAQ1NoYXJwQmluZGVyRmxhZ3MAQ3JlYXRlAFRhcmdldABfV29ya2Jvb2sAZ2V0X0FjdGl2ZVNoZWV0AEludm9rZQBFcnJvckNoZWNraW5nT3B0aW9ucwBnZXRfRXJyb3JDaGVja2luZ09wdGlvbnMAX1dvcmtzaGVldABJbnQzMgBTeXN0ZW0uUmVmbGVjdGlvbgBWYWx1ZQBnZXRfX0RlZmF1bHQAc2V0X051bWJlckZvcm1hdABJc051bGxPckVtcHR5AHNldF9OdW1iZXJBc1RleHQAZ2V0X0NlbGxzAGdldF9SYW5nZQBCb29sZWFuAE1lcmdlAHNldF9WYWx1ZTIARm9udABnZXRfRm9udABzZXRfQm9sZABzZXRfU2l6ZQBYbEhBbGlnbgBzZXRfSG9yaXpvbnRhbEFsaWdubWVudABJRGljdGlvbmFyeUVudW1lcmF0b3IARGljdGlvbmFyeUVudHJ5AGdldF9LZXkAZ2V0X1ZhbHVlAEJvcmRlcnMAZ2V0X0JvcmRlcnMAWGxCb3JkZXJXZWlnaHQAc2V0X1dlaWdodABYbExpbmVTdHlsZQBzZXRfTGluZVN0eWxlAFN5c3RlbS5EcmF3aW5nAENvbG9yAGdldF9CbGFjawBDb2xvclRyYW5zbGF0b3IAVG9PbGUAc2V0X0NvbG9yAExpc3RPYmplY3RzAGdldF9MaXN0T2JqZWN0cwBMaXN0T2JqZWN0AFhsTGlzdE9iamVjdFNvdXJjZVR5cGUAWGxZZXNOb0d1ZXNzAEFkZEV4AHNldF9OYW1lAHNldF9UYWJsZVN0eWxlAGdldF9FbnRpcmVDb2x1bW4AQXV0b0ZpdABnZXRfQ29sdW1uV2lkdGgAc2V0X0NvbHVtbldpZHRoAENvbmNhdABTeXN0ZW0uV2luZG93cy5Gb3JtcwBNZXNzYWdlQm94AERpYWxvZ1Jlc3VsdABTaG93AENoYXJ0T2JqZWN0AENoYXJ0AGdldF9DaGFydABfQ2hhcnQAc2V0X0hhc1RpdGxlAFhsUm93Q29sAFNldFNvdXJjZURhdGEAWGxDaGFydFR5cGUARW51bQBBcnJheQBHZXRWYWx1ZXMAR2V0VmFsdWUAc2V0X0NoYXJ0VHlwZQBnZXRfQ2FwdGlvbgBzZXRfVmlzaWJsZQBSZWxlYXNlQ29tT2JqZWN0AEdDAENvbGxlY3QARGxsSW1wb3J0QXR0cmlidXRlAHVzZXIzMi5kbGwAQ29tcGlsZXJHZW5lcmF0ZWRBdHRyaWJ1dGUARG9jRXZlbnRzX0V2ZW50AEd1aWRBdHRyaWJ1dGUAVHlwZUlkZW50aWZpZXJBdHRyaWJ1dGUAQ29tSW1wb3J0QXR0cmlidXRlAENvQ2xhc3NBdHRyaWJ1dGUASUVudW1lcmFibGUAX1Z0YmxHYXAxXzE1AERpc3BJZEF0dHJpYnV0ZQBfVnRibEdhcDJfMwBfVnRibEdhcDNfMQBfVnRibEdhcDRfMTAAdmFsdWUAX1Z0YmxHYXA1XzExAFJvd0luZGV4AENvbHVtbkluZGV4AHNldF9fRGVmYXVsdABfVnRibEdhcDZfNwBfVnRibEdhcDdfOABfVnRibEdhcDhfMjIAZ2V0X0hvcml6b250YWxBbGlnbm1lbnQAX1Z0YmxHYXA5XzE0AEFjcm9zcwBfVnRibEdhcDEwXzEwAGdldF9OdW1iZXJGb3JtYXQAX1Z0YmxHYXAxMV82MABnZXRfVmFsdWUyAENlbGxzAENvbHVtbldpZHRoAF9EZWZhdWx0AEVudGlyZUNvbHVtbgBIb3Jpem9udGFsQWxpZ25tZW50AE51bWJlckZvcm1hdABWYWx1ZTIARGVmYXVsdE1lbWJlckF0dHJpYnV0ZQBJbnRlcmZhY2VUeXBlQXR0cmlidXRlAENvbUludGVyZmFjZVR5cGUAX1Z0YmxHYXAxXzQ4AExlZnQAVG9wAFdpZHRoAEhlaWdodABBcHBFdmVudHNfRXZlbnQAX1Z0YmxHYXAxXzQ1AF9WdGJsR2FwMl8yNABzZXRfQ2FwdGlvbgBSSFMAX1Z0YmxHYXAzXzIwMwBnZXRfVmlzaWJsZQBMQ0lEQ29udmVyc2lvbkF0dHJpYnV0ZQBfVnRibEdhcDRfNzAAQ2FwdGlvbgBWaXNpYmxlAF9WdGJsR2FwMV8zAFRlbXBsYXRlAFdvcmtib29rRXZlbnRzX0V2ZW50AF9WdGJsR2FwMV83AEFjdGl2ZVNoZWV0AF9WdGJsR2FwMV8xMQBnZXRfTnVtYmVyQXNUZXh0AE51bWJlckFzVGV4dABJbmRleABfVnRibEdhcDJfNABfVnRibEdhcDNfNDEAQ2VsbDEAQ2VsbDIAX1Z0YmxHYXA0XzQyAENvbHVtbnMAX1Z0YmxHYXAxXzUAZ2V0X0JvbGQAX1Z0YmxHYXAyXzE0AGdldF9TaXplAEJvbGQAU2l6ZQB2YWx1ZV9fAHhsSEFsaWduQ2VudGVyAHhsSEFsaWduQ2VudGVyQWNyb3NzU2VsZWN0aW9uAHhsSEFsaWduRGlzdHJpYnV0ZWQAeGxIQWxpZ25GaWxsAHhsSEFsaWduR2VuZXJhbAB4bEhBbGlnbkp1c3RpZnkAeGxIQWxpZ25MZWZ0AHhsSEFsaWduUmlnaHQAZ2V0X0NvbG9yAGdldF9MaW5lU3R5bGUAX1Z0YmxHYXAzXzMAZ2V0X1dlaWdodABMaW5lU3R5bGUAV2VpZ2h0AHhsSGFpcmxpbmUAeGxNZWRpdW0AeGxUaGljawB4bFRoaW4AeGxDb250aW51b3VzAHhsRGFzaAB4bERhc2hEb3QAeGxEYXNoRG90RG90AHhsRG90AHhsRG91YmxlAHhsU2xhbnREYXNoRG90AHhsTGluZVN0eWxlTm9uZQBfVnRibEdhcDFfNgBfVnRibEdhcDJfMQBTb3VyY2VUeXBlAFNvdXJjZQBMaW5rU291cmNlAFhsTGlzdE9iamVjdEhhc0hlYWRlcnMARGVzdGluYXRpb24AVGFibGVTdHlsZU5hbWUASXRlbQBfVnRibEdhcDFfMTgAZ2V0X05hbWUAX1Z0YmxHYXAyXzE1AGdldF9UYWJsZVN0eWxlAE5hbWUAVGFibGVTdHlsZQB4bFNyY0V4dGVybmFsAHhsU3JjUmFuZ2UAeGxTcmNYbWwAeGxTcmNRdWVyeQB4bEd1ZXNzAHhsTm8AeGxZZXMAX1Z0YmxHYXAxXzM5AENoYXJ0RXZlbnRzX0V2ZW50AF9WdGJsR2FwMV84NABnZXRfSGFzVGl0bGUAX1Z0YmxHYXAyXzQxAGdldF9DaGFydFR5cGUAX1Z0YmxHYXAzXzE5AFBsb3RCeQBIYXNUaXRsZQB4bENvbHVtbnMAeGxSb3dzAHhsQ29sdW1uQ2x1c3RlcmVkAHhsQ29sdW1uU3RhY2tlZAB4bENvbHVtblN0YWNrZWQxMDAAeGwzRENvbHVtbkNsdXN0ZXJlZAB4bDNEQ29sdW1uU3RhY2tlZAB4bDNEQ29sdW1uU3RhY2tlZDEwMAB4bEJhckNsdXN0ZXJlZAB4bEJhclN0YWNrZWQAeGxCYXJTdGFja2VkMTAwAHhsM0RCYXJDbHVzdGVyZWQAeGwzREJhclN0YWNrZWQAeGwzREJhclN0YWNrZWQxMDAAeGxMaW5lU3RhY2tlZAB4bExpbmVTdGFja2VkMTAwAHhsTGluZU1hcmtlcnMAeGxMaW5lTWFya2Vyc1N0YWNrZWQAeGxMaW5lTWFya2Vyc1N0YWNrZWQxMDAAeGxQaWVPZlBpZQB4bFBpZUV4cGxvZGVkAHhsM0RQaWVFeHBsb2RlZAB4bEJhck9mUGllAHhsWFlTY2F0dGVyU21vb3RoAHhsWFlTY2F0dGVyU21vb3RoTm9NYXJrZXJzAHhsWFlTY2F0dGVyTGluZXMAeGxYWVNjYXR0ZXJMaW5lc05vTWFya2VycwB4bEFyZWFTdGFja2VkAHhsQXJlYVN0YWNrZWQxMDAAeGwzREFyZWFTdGFja2VkAHhsM0RBcmVhU3RhY2tlZDEwMAB4bERvdWdobnV0RXhwbG9kZWQAeGxSYWRhck1hcmtlcnMAeGxSYWRhckZpbGxlZAB4bFN1cmZhY2UAeGxTdXJmYWNlV2lyZWZyYW1lAHhsU3VyZmFjZVRvcFZpZXcAeGxTdXJmYWNlVG9wVmlld1dpcmVmcmFtZQB4bEJ1YmJsZQB4bEJ1YmJsZTNERWZmZWN0AHhsU3RvY2tITEMAeGxTdG9ja09ITEMAeGxTdG9ja1ZITEMAeGxTdG9ja1ZPSExDAHhsQ3lsaW5kZXJDb2xDbHVzdGVyZWQAeGxDeWxpbmRlckNvbFN0YWNrZWQAeGxDeWxpbmRlckNvbFN0YWNrZWQxMDAAeGxDeWxpbmRlckJhckNsdXN0ZXJlZAB4bEN5bGluZGVyQmFyU3RhY2tlZAB4bEN5bGluZGVyQmFyU3RhY2tlZDEwMAB4bEN5bGluZGVyQ29sAHhsQ29uZUNvbENsdXN0ZXJlZAB4bENvbmVDb2xTdGFja2VkAHhsQ29uZUNvbFN0YWNrZWQxMDAAeGxDb25lQmFyQ2x1c3RlcmVkAHhsQ29uZUJhclN0YWNrZWQAeGxDb25lQmFyU3RhY2tlZDEwMAB4bENvbmVDb2wAeGxQeXJhbWlkQ29sQ2x1c3RlcmVkAHhsUHlyYW1pZENvbFN0YWNrZWQAeGxQeXJhbWlkQ29sU3RhY2tlZDEwMAB4bFB5cmFtaWRCYXJDbHVzdGVyZWQAeGxQeXJhbWlkQmFyU3RhY2tlZAB4bFB5cmFtaWRCYXJTdGFja2VkMTAwAHhsUHlyYW1pZENvbAB4bDNEQ29sdW1uAHhsTGluZQB4bDNETGluZQB4bDNEUGllAHhsUGllAHhsWFlTY2F0dGVyAHhsM0RBcmVhAHhsQXJlYQB4bERvdWdobnV0AHhsUmFkYXIAQ29tRXZlbnRJbnRlcmZhY2VBdHRyaWJ1dGUAQXBwRXZlbnRzAENoYXJ0RXZlbnRzAERvY0V2ZW50cwBXb3JrYm9va0V2ZW50cwAAHVMAeQBzAHQAZQBtAC4AQgBvAG8AbABlAGEAbgAAH1MAeQBzAHQAZQBtAC4ARABhAHQAZQBUAGkAbQBlAAABABtTAHkAcwB0AGUAbQAuAEQAbwB1AGIAbABlAABJMAAwADAAMgA0ADUAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQBDADAAMAAwAC0AMAAwADAAMAAwADAAMAAwADAAMAA0ADYAARtTAHkAcwB0AGUAbQAuAFMAdAByAGkAbgBnAAADQAAAEW0ALwBkAC8AeQB5AHkAeQAAESMALAAjACMAMAAuADAAMAAAD0YAaQBsAHQAZQByAHMAABlNAHkAVABhAGIAbABlAFMAdAB5AGwAZQAAIVQAYQBiAGwAZQBTAHQAeQBsAGUATABpAGcAaAB0ADgAAB1GAG8AcgBtAHUAbABhADoAIABBADIANwA6AEEAAA07AEMAMgA3ADoAQwAADTsARAAyADcAOgBEAAA1QQAyADcAOgBBADEAMQA5ADsAQwAyADcAOgBDADEAMQA5ADsARAAyADcAOgBEADEAMQA5AAAAVuvcvapUakGJIMP0Lt/9egAIt3pcVhk04IkQAAcBEBIJEBINEA4CAgYQDgQAAQIYBQACGA4OBSABAREVAQIEIAEBCAMgAAEOBhUSIQEVEiUDEikcEhAOBhUSIQEVEiUDEikcEhQNBhUSIQEVEiUDEikcDQ4GFRIhARUSJQMSKRwSGAQgABI5AyAACAQgABJBBiADAQgICAQgABJJAyAAHAMgAA4DIAACBxQcAgACAAAFIAIBCAgFIAESTQgEIAASVQUAARJVDgcAAgISVRJVBSABElkIBCAAHRwGIAMBCAgcBQACAg4OBwACAhFFEUUFIAERRQ0DIAANBAABAhwEAAASaQUgAQ4SbQQgAQEOBgABElURcQUAARwSVQQgABIkAgYcBSABEigcBwABElURgI0IsD9ffxHVCjoMAAMSgJURgJkSVRJVDRUSIQEVEiUDEikcEhALAAEVEiEBEwASgJUDBhMACRUSJQMSKRwSEAggAhMCEwATAQQgABIwDRUSIQEVEiUDEikcEhQEIAASFAQGEoCtBSACHBwcCRUSJQMSKRwSFAQgAQEcBAABAg4EIAEBAgYgAhIUHBwHFA4CAAIAAAYgAwEICA4EIAASOAUgABKAvQQgABJABQAAEYDRBgABCBGA0QQgABJMDCAGElARVBwcEVgcHAUgARJQHAwVEiEBFRIlAxIpHA0IFRIlAxIpHA0FAAEOHRwGAAERgO0ODRUSIQEVEiUDEikcEhgEIAEcHAkVEiUDEikcEhgIIAQSXA0NDQ0EIAASYAYgAgESFBwHAAESgQkSVQQgARwIBSABARFsBAABCBwDAAABaAcvEiAICBFFEUUdHAgSTRQcAgACAAAOCAgRRRIkEigSEBIwCBIUFBwCAAIAAAgRgMESFBIUEhQSFBIUEhQSFBIUDQgSGBJcEmARbAIOGBJJElENFA4CAAIAABKAvRJRFA4CAAIAAB0cBAEAAAApAQAkMDAwMjA4RDgtMDAwMC0wMDAwLUMwMDAtMDAwMDAwMDAwMDQ2AAAFIAEBElVfAQBaU3lzdGVtLk9iamVjdCwgbXNjb3JsaWIsIFZlcnNpb249NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5AAAIAQDtAAAAAAABGwgBALMBAAAAAAEcCAEA7gAAAAAACAEA8gAAAAAACAEAAAAAAAAABiADARwcHAgBAPYAAAAAAAgBAJIAAAAAAAgBAIgAAAAAAAgBADQCAAAAAAgBAMEAAAAAAAgBAGwFAAAAAAQoABJABCgAEhQDKAAcBSgCHBwcBCgAEjgpAQAkMDAwMjA4NDYtMDAwMC0wMDAwLUMwMDAtMDAwMDAwMDAwMDQ2AAANAQAIX0RlZmF1bHQAAAYgAQERgT0IAQACAAAAAAAIAQC1AAAAAAApAQAkMDAwMjA4RDAtMDAwMC0wMDAwLUMwMDAtMDAwMDAwMDAwMDQ2AAApAQAkMDAwMjA4RDUtMDAwMC0wMDAwLUMwMDAtMDAwMDAwMDAwMDQ2AAAIAQA8AgAAAAAIAQCLAAAAAAABEwgBAC4CAAAAAAgBAKIHAAAAAAQoABIkAygADgMoAAIEKAASMAgBAAEAAAAAACkBACQwMDAyMDhEQi0wMDAwLTAwMDAtQzAwMC0wMDAwMDAwMDAwNDYAACkBACQwMDAyMDhEQS0wMDAwLTAwMDAtQzAwMC0wMDAwMDAwMDAwNDYAAAgBADMBAAAAAAEaCAEAnQgAAAAAKQEAJDAwMDI0NDVCLTAwMDAtMDAwMC1DMDAwLTAwMDAwMDAwMDA0NgAACAEAJAQAAAAACAEA8QAAAAAACAEAxQAAAAAACAEA0wgAAAAABigCEhQcHAQoABJMCAEAYAAAAAAACAEAaAAAAAAAKQEAJDAwMDIwODRELTAwMDAtMDAwMC1DMDAwLTAwMDAwMDAwMDA0NgAAAgYIAwYRPAT07///BAcAAAAE6+///wQFAAAABN7v//8E3e///wTI7///BSACAQ4OUQEAJDAwMDIwODEzLTAwMDAtMDAwMC1jMDAwLTAwMDAwMDAwMDA0NidNaWNyb3NvZnQuT2ZmaWNlLkludGVyb3AuRXhjZWwuWGxIQWxpZ24AAAgBAGMAAAAAAAgBAHcAAAAAAAgBAHgAAAAAACkBACQwMDAyMDg1NS0wMDAwLTAwMDAtQzAwMC0wMDAwMDAwMDAwNDYAAAMGEUQE1u///wQEAAAABAIAAABXAQAkMDAwMjA4MTMtMDAwMC0wMDAwLWMwMDAtMDAwMDAwMDAwMDQ2LU1pY3Jvc29mdC5PZmZpY2UuSW50ZXJvcC5FeGNlbC5YbEJvcmRlcldlaWdodAAAAwYRSATt7///BOrv//8E6e///wQNAAAABNLv//9UAQAkMDAwMjA4MTMtMDAwMC0wMDAwLWMwMDAtMDAwMDAwMDAwMDQ2Kk1pY3Jvc29mdC5PZmZpY2UuSW50ZXJvcC5FeGNlbC5YbExpbmVTdHlsZQAACAEAqgAAAAAABAAAAAAFKAESUBwpAQAkMDAwMjQ0NzAtMDAwMC0wMDAwLUMwMDAtMDAwMDAwMDAwMDQ2AAAIAQBuAAAAAAAIAQDgBQAAAAApAQAkMDAwMjQ0NzEtMDAwMC0wMDAwLUMwMDAtMDAwMDAwMDAwMDQ2AAADBhFUBAMAAABfAQAkMDAwMjA4MTMtMDAwMC0wMDAwLWMwMDAtMDAwMDAwMDAwMDQ2NU1pY3Jvc29mdC5PZmZpY2UuSW50ZXJvcC5FeGNlbC5YbExpc3RPYmplY3RTb3VyY2VUeXBlAAADBhFYVQEAJDAwMDIwODEzLTAwMDAtMDAwMC1jMDAwLTAwMDAwMDAwMDA0NitNaWNyb3NvZnQuT2ZmaWNlLkludGVyb3AuRXhjZWwuWGxZZXNOb0d1ZXNzAAAIAQAHAAAAAAAEKAASYCkBACQwMDAyMDhDRi0wMDAwLTAwMDAtQzAwMC0wMDAwMDAwMDAwNDYAACkBACQwMDAyMDhENi0wMDAwLTAwMDAtQzAwMC0wMDAwMDAwMDAwNDYAAAgBADYAAAAAAAQgABFsCAEAeAUAAAAACAEAhQUAAAAABCgAEWwDBhFoUQEAJDAwMDIwODEzLTAwMDAtMDAwMC1jMDAwLTAwMDAwMDAwMDA0NidNaWNyb3NvZnQuT2ZmaWNlLkludGVyb3AuRXhjZWwuWGxSb3dDb2wAAAMGEWwEMwAAAAQ0AAAABDUAAAAENgAAAAQ3AAAABDgAAAAEOQAAAAQ6AAAABDsAAAAEPAAAAAQ9AAAABD4AAAAEPwAAAARAAAAABEEAAAAEQgAAAARDAAAABEQAAAAERQAAAARGAAAABEcAAAAESAAAAARJAAAABEoAAAAESwAAAARMAAAABE0AAAAETgAAAARPAAAABFAAAAAEUQAAAARSAAAABFMAAAAEVAAAAARVAAAABFYAAAAEDwAAAARXAAAABFgAAAAEWQAAAARaAAAABFsAAAAEXAAAAARdAAAABF4AAAAEXwAAAARgAAAABGEAAAAEYgAAAARjAAAABGQAAAAEZQAAAARmAAAABGcAAAAEaAAAAARpAAAABGoAAAAEawAAAARsAAAABG0AAAAEbgAAAARvAAAABHAAAAAE/O///wT77///BPrv//8Et+///wT+7///BOjv//8Eye///1QBACQwMDAyMDgxMy0wMDAwLTAwMDAtYzAwMC0wMDAwMDAwMDAwNDYqTWljcm9zb2Z0Lk9mZmljZS5JbnRlcm9wLkV4Y2VsLlhsQ2hhcnRUeXBlAABYAQAkMDAwMjA4MTMtMDAwMC0wMDAwLWMwMDAtMDAwMDAwMDAwMDQ2Lk1pY3Jvc29mdC5PZmZpY2UuSW50ZXJvcC5FeGNlbC5Eb2NFdmVudHNfRXZlbnQAAAcgAgESVRJVVgEAKE1pY3Jvc29mdC5PZmZpY2UuSW50ZXJvcC5FeGNlbC5Eb2NFdmVudHMoTWljcm9zb2Z0Lk9mZmljZS5JbnRlcm9wLkV4Y2VsLkRvY0V2ZW50cwAAWAEAJDAwMDIwODEzLTAwMDAtMDAwMC1jMDAwLTAwMDAwMDAwMDA0Ni5NaWNyb3NvZnQuT2ZmaWNlLkludGVyb3AuRXhjZWwuQXBwRXZlbnRzX0V2ZW50AABWAQAoTWljcm9zb2Z0Lk9mZmljZS5JbnRlcm9wLkV4Y2VsLkFwcEV2ZW50cyhNaWNyb3NvZnQuT2ZmaWNlLkludGVyb3AuRXhjZWwuQXBwRXZlbnRzAABdAQAkMDAwMjA4MTMtMDAwMC0wMDAwLWMwMDAtMDAwMDAwMDAwMDQ2M01pY3Jvc29mdC5PZmZpY2UuSW50ZXJvcC5FeGNlbC5Xb3JrYm9va0V2ZW50c19FdmVudAAAYAEALU1pY3Jvc29mdC5PZmZpY2UuSW50ZXJvcC5FeGNlbC5Xb3JrYm9va0V2ZW50cy1NaWNyb3NvZnQuT2ZmaWNlLkludGVyb3AuRXhjZWwuV29ya2Jvb2tFdmVudHMAAFoBACQwMDAyMDgxMy0wMDAwLTAwMDAtYzAwMC0wMDAwMDAwMDAwNDYwTWljcm9zb2Z0Lk9mZmljZS5JbnRlcm9wLkV4Y2VsLkNoYXJ0RXZlbnRzX0V2ZW50AABaAQAqTWljcm9zb2Z0Lk9mZmljZS5JbnRlcm9wLkV4Y2VsLkNoYXJ0RXZlbnRzKk1pY3Jvc29mdC5PZmZpY2UuSW50ZXJvcC5FeGNlbC5DaGFydEV2ZW50cwAAKQEAJDAwMDI0NDEzLTAwMDAtMDAwMC1DMDAwLTAwMDAwMDAwMDA0NgAAKQEAJDAwMDI0NDBGLTAwMDAtMDAwMC1DMDAwLTAwMDAwMDAwMDA0NgAAKQEAJDAwMDI0NDExLTAwMDAtMDAwMC1DMDAwLTAwMDAwMDAwMDA0NgAAKQEAJDAwMDI0NDEyLTAwMDAtMDAwMC1DMDAwLTAwMDAwMDAwMDA0NgAACAEACAAAAAAAHgEAAQBUAhZXcmFwTm9uRXhjZXB0aW9uVGhyb3dzAQDYcgAAAAAAAAAAAADucgAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4HIAAAAAAAAAAF9Db3JEbGxNYWluAG1zY29yZWUuZGxsAAAAAAD/JQAgABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAEAAAABgAAIAAAAAAAAAAAAAAAAAAAAEAAQAAADAAAIAAAAAAAAAAAAAAAAAAAAEAAAAAAEgAAABYgAAATAIAAAAAAAAAAAAATAI0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8AAAAAAL0E7/4AAAEAAAAAAAAAAAAAAAAAAAAAAD8AAAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAABEAAAAAQBWAGEAcgBGAGkAbABlAEkAbgBmAG8AAAAAACQABAAAAFQAcgBhAG4AcwBsAGEAdABpAG8AbgAAAAAAAACwBKwBAAABAFMAdAByAGkAbgBnAEYAaQBsAGUASQBuAGYAbwAAAIgBAAABADAAMAAwADAAMAA0AGIAMAAAACwAAgABAEYAaQBsAGUARABlAHMAYwByAGkAcAB0AGkAbwBuAAAAAAAgAAAAMAAIAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAAAAAwAC4AMAAuADAALgAwAAAAPAANAAEASQBuAHQAZQByAG4AYQBsAE4AYQBtAGUAAABiAGcAZwB2ADQAbABzAGcALgBkAGwAbAAAAAAAKAACAAEATABlAGcAYQBsAEMAbwBwAHkAcgBpAGcAaAB0AAAAIAAAAEQADQABAE8AcgBpAGcAaQBuAGEAbABGAGkAbABlAG4AYQBtAGUAAABiAGcAZwB2ADQAbABzAGcALgBkAGwAbAAAAAAANAAIAAEAUAByAG8AZAB1AGMAdABWAGUAcgBzAGkAbwBuAAAAMAAuADAALgAwAC4AMAAAADgACAABAEEAcwBzAGUAbQBiAGwAeQAgAFYAZQByAHMAaQBvAG4AAAAwAC4AMAAuADAALgAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHAAAAwAAAAAMwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="/>
+                  <SnippetLanguage val="C"/>
+                  <ForCompactFramework val="N"/>
+                  <isGuiThreadExecution val="Y"/>
+                  <CompileTime HighDateTime="31181115" LowDateTime="2619274392"/>
+                  <AssemblyIds val="932965495,-612915800,158945481,-1775812437,-812272197,"/>
+                  <RetainFocus val="Y"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Invoke>
+              </LogicLine>
+              <LogicLine>
+                <Evaluate FlowIsn="37">
+                  <Expression val="20"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </Evaluate>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="206">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <END_BLK FlowIsn="143"/>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="205">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+              <LogicLine>
+                <END_BLK FlowIsn="90"/>
+              </LogicLine>
+              <LogicLine>
+                <Remark FlowIsn="154">
+                  <Type val="2"/>
+                  <Text val=" "/>
+                </Remark>
+              </LogicLine>
+            </LogicLines>
+          </LogicUnit>
+        </TaskLogic>
+        <TaskForms>
+          <FormEntry _last_isn="4" _last_test_id="4" id="6">
+            <PropertyList model="FORM_RICH_CLIENT">
+              <Model comp="-1" id="1" obj="1"/>
+              <Width id="23" val="890"/>
+              <Height id="24" val="100"/>
+              <TitleBar id="26"/>
+              <SystemMenu id="27"/>
+              <BorderStyle id="64" val="1"/>
+              <_Comment id="218"/>
+              <FormName id="311" valUnicode="Download to Excel"/>
+            </PropertyList>
+            <Control _test_id="4" id="4">
+              <PropertyList model="CTRL_RICH_CLIENT_LABEL">
+                <Text id="19" valUnicode="Download File . . . . ."/>
+                <X id="21" val="315"/>
+                <Y id="22" val="32"/>
+                <Width id="23" val="262"/>
+                <Height id="24" val="40"/>
+                <_Orientation id="143"/>
+              </PropertyList>
+            </Control>
+          </FormEntry>
+        </TaskForms>
+        <Expressions>
+          <Expression id="1">
+            <ExpSyntax val="{0,15}"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="21">
+            <ExpSyntax val="3"/>
+            <ExpAttribute val="N"/>
+          </Expression>
+          <Expression id="22">
+            <ExpSyntax val="{0,23}=0"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="2">
+            <ExpSyntax val="Translate('%REPORT%')&amp;Trim({32768,9})&amp;'-'&amp;Trim(Str(CtxGetId(''),'18'))&amp;TStr(Date(),'HHMMSS')"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="3">
+            <ExpSyntax val="IF(IsMobileClient(),'csv','xls')"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="4">
+            <ExpSyntax val="DataViewVars(1,{0,23})"/>
+            <ExpAttribute val="O"/>
+          </Expression>
+          <Expression id="5">
+            <ExpSyntax val="DataViewVarsIndex(1,{0,23})"/>
+            <ExpAttribute val="O"/>
+          </Expression>
+          <Expression id="6">
+            <ExpSyntax val="LoopCounter()&lt;=VecSize({0,17})"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="7">
+            <ExpSyntax val="VarDisplayName(VecGet ({0,18},LoopCounter()))"/>
+            <ExpAttribute val="U"/>
+          </Expression>
+          <Expression id="8">
+            <ExpSyntax val="Trim({0,19})=''"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="9">
+            <ExpSyntax val="VecGet ({0,17},LoopCounter())"/>
+            <ExpAttribute val="*"/>
+          </Expression>
+          <Expression id="10">
+            <ExpSyntax val="RepStr({0,19}, '\,' , ',')"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="11">
+            <ExpSyntax val="Trim({0,21})&amp;IF(Trim({0,21})&lt;>'',',','')&amp;Trim(VecGet ({0,17},LoopCounter()))"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="12">
+            <ExpSyntax val="Trim({0,22})&amp;IF(Trim({0,22})&lt;>'',',','')&amp;Trim({0,19})"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="13">
+            <ExpSyntax val="Delay(2)"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="14">
+            <ExpSyntax val="DataViewToHTML(1,{0,21},{0,22},Trim({0,15})&amp;'.'&amp;Trim({0,20}),Trim({0,15}),0)"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="25">
+            <ExpSyntax val="DataViewToText(1,{0,21},{0,22},Trim({0,15}),';','',0)"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="26">
+            <ExpSyntax val="'cmd /c type '&amp;Trim({0,15})&amp; ' >> '&amp;Trim({0,15})&amp;'.'&amp;Trim({0,20})"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="16">
+            <ExpSyntax val="Trim({0,15})&amp;'.'&amp;Trim({0,20})"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="15">
+            <ExpSyntax val="FileDelete({0,15})"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="18">
+            <ExpSyntax val="FileInfo(Trim({0,15})&amp;'.'&amp;Trim({0,20}),5)&lt;10000000"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="17">
+            <ExpSyntax val="FileInfo(Trim({0,15})&amp;'.'&amp;Trim({0,20}),5)>=10000000"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="19">
+            <ExpSyntax val="SetCrsr(2)"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="20">
+            <ExpSyntax val="SetCrsr(1)"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="23">
+            <ExpSyntax val="IsMobileClient()"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="24">
+            <ExpSyntax val="'#,##0'&amp;&#xD;&#xA;IF(Val({32768,117},'1')>0,'.'&amp;Fill('0',Val({32768,117},'1')),'')&amp;';(#,##0'&amp;IF(Val({32768,117},'1')>0,'.'&amp;Fill('0',Val({32768,117},'1')),'')&amp;')'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="27">
+            <ExpSyntax val="Translate('%HTTPREPORT%')&amp;Trim(FileInfo({0,15},1))&amp;'.'&amp;Trim({0,20})"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="28">
+            <ExpSyntax val="'SETUP'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="29">
+            <ExpSyntax val="'NETEXCEL'"/>
+            <ExpAttribute val="A"/>
+          </Expression>
+          <Expression id="30">
+            <ExpSyntax val="ISNULL({0,27}) OR {0,27}&lt;>'Y' OR FileInfo(Trim({0,15})&amp;'.'&amp;Trim({0,20}),5)>=10000000"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="31">
+            <ExpSyntax val="DataViewToDNDataTable(1,{0,21},{0,22})"/>
+            <ExpAttribute val="O"/>
+          </Expression>
+          <Expression id="32">
+            <ExpSyntax val="DotNet.System.Collections.Hashtable()"/>
+            <ExpAttribute val="O"/>
+          </Expression>
+          <Expression id="33">
+            <ExpSyntax val="StrTokenCnt({0,16},'|')"/>
+            <ExpAttribute val="N"/>
+          </Expression>
+          <Expression id="34">
+            <ExpSyntax val="{0,32}&lt;{0,30}"/>
+            <ExpAttribute val="B"/>
+          </Expression>
+          <Expression id="35">
+            <ExpSyntax val="{0,29}.Add(StrToken(StrToken({0,16},{0,32},'|'),1,':'),StrToken(StrToken({0,16},{0,32},'|'),2,':'))"/>
+            <ExpAttribute val="O"/>
+          </Expression>
+          <Expression id="37">
+            <ExpSyntax val="{0,32}+1"/>
+            <ExpAttribute val="N"/>
+          </Expression>
+        </Expressions>
+        <Task MainProgram="N">
+          <Header Description="Merge" ISN_2="3" LastIsn="8" id="127">
+            <ExecutionRight comp="-1"/>
+            <Resident val="N"/>
+            <SQL val="N"/>
+            <ReturnValue>
+              <ReturnValueAttr/>
+              <ParametersAttributes/>
+            </ReturnValue>
+            <SqlWhereExist val="N"/>
+            <TaskType val="B"/>
+            <External val="N"/>
+            <FormType val="N"/>
+            <DotNetObjectExists val="N"/>
+            <LastModified _date="739282" _time="55243" date="31/01/2025" time="15:20:43"/>
+          </Header>
+          <Resource>
+            <IO id="1">
+              <Description val="File"/>
+              <IOExpression val="1"/>
+              <OpenPrintDialog val="N"/>
+              <PaperSize val="68"/>
+              <Format val="L"/>
+              <Media val="S"/>
+              <Access val="W"/>
+              <Orientation val="P"/>
+              <PrintPreview val="N"/>
+              <PDF val="N"/>
+              <PrintingAllowed val="Y"/>
+              <ContentCopyingAllowed val="Y"/>
+              <ChangesAllowed val="Y"/>
+              <PageLayoutAllowed val="Y"/>
+              <Vis2LogTranslation val="N"/>
+              <FlipLines val="N"/>
+            </IO>
+            <Columns/>
+          </Resource>
+          <Information>
+            <Key>
+              <Mode val="N"/>
+            </Key>
+            <DB comp="-1"/>
+            <Sort>
+              <CLS val="A"/>
+            </Sort>
+            <ForceRecordDelete DEL="N"/>
+            <EndTaskCondition val="Y"/>
+            <EvaluateEndCondition val="A"/>
+            <InitialMode val="M"/>
+            <Locate Direction="A"/>
+            <Range Direction="A"/>
+            <VarRange/>
+            <TaskProperties>
+              <SelectionTable val="N"/>
+              <ConfirmUpdate CNFU="N"/>
+              <ConfirmCancel val="N"/>
+              <ErrorStrategy val="A"/>
+              <LockingStrategy val="I"/>
+              <CacheStrategy val="N"/>
+              <ForceRecordSuffix val="N"/>
+              <TransactionMode val="W"/>
+              <TransactionBegin val="T"/>
+              <PreloadView val="N"/>
+              <AllowEmptyDataview val="N"/>
+              <KeepCreatedContext val="N"/>
+            </TaskProperties>
+            <SIDE_WIN>
+              <AllowOptions val="N"/>
+              <AllowQuery val="Y"/>
+              <AllowModify val="Y"/>
+              <AllowCreate val="Y"/>
+              <AllowDelete val="Y"/>
+              <AllowLocate val="Y"/>
+              <AllowRange val="Y"/>
+              <AllowIndexChange val="Y"/>
+              <AllowSorting val="Y"/>
+              <AllowIOFiles val="Y"/>
+              <RecordCycle val="Y"/>
+              <AllowEvents val="Y"/>
+              <AllowIndexOptimization val="Y"/>
+              <AllowLocationInQuery val="Y"/>
+              <AllowPrintingData val="N"/>
+            </SIDE_WIN>
+            <WIN>
+              <OpenTaskWindow val="N"/>
+              <CloseTaskWindow val="Y"/>
+              <ForegroundWindow val="Y"/>
+              <FlipFld val="N"/>
+              <RefreshTaskWindow ReturnValue="N"/>
+            </WIN>
+            <BOX>
+              <Direction val="V"/>
+            </BOX>
+          </Information>
+          <TaskLogic>
+            <LogicUnit id="1" propagate="78">
+              <Level val="R"/>
+              <Type val="M"/>
+              <Scope val="S"/>
+              <EngineDirective val="S"/>
+              <ShowMessage val="Y"/>
+              <Condition val="89"/>
+              <Event>
+                <EventType val="S"/>
+                <PublicObject comp="-1"/>
+              </Event>
+              <LogicLines>
+                <LogicLine>
+                  <DATAVIEW_SRC FlowIsn="1" Type="M">
+                    <Condition val="N"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </DATAVIEW_SRC>
+                </LogicLine>
+              </LogicLines>
+            </LogicUnit>
+            <LogicUnit id="2" propagate="78">
+              <Level val="T"/>
+              <Type val="S"/>
+              <Scope val="S"/>
+              <EngineDirective val="S"/>
+              <ShowMessage val="Y"/>
+              <Condition val="89"/>
+              <Event>
+                <EventType val="S"/>
+                <PublicObject comp="-1"/>
+              </Event>
+              <Expanded val="1"/>
+              <LogicLines>
+                <LogicLine>
+                  <FormIO FlowIsn="2">
+                    <OperationType val="O"/>
+                    <Page val="A"/>
+                    <IODeviceInfo>
+                      <IoDeviceIndex val="1"/>
+                    </IODeviceInfo>
+                    <FormEntryInfo>
+                      <FormEntryIndex val="2"/>
+                    </FormEntryInfo>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </FormIO>
+                </LogicLine>
+              </LogicLines>
+            </LogicUnit>
+          </TaskLogic>
+          <TaskForms>
+            <FormEntry id="1">
+              <PropertyList model="FORM_GUI0">
+                <_Comment id="218"/>
+                <FormName id="311" valUnicode="Merge"/>
+              </PropertyList>
+            </FormEntry>
+          </TaskForms>
+          <TaskForms>
+            <FormEntry CLSS="5" id="2">
+              <PropertyList model="FORM_MERGE">
+                <FileName id="4" val="%RESOURCE%template-Export.htm"/>
+                <TagsTable id="7">
+                  <MERGE_PARM Exp="2" PIC_U="50" TXT_U="Company" id="1"/>
+                  <MERGE_PARM Exp="3" PIC_U="40" TXT_U="TITLE" id="2"/>
+                  <MERGE_PARM Exp="4" PIC_U="1000" TXT_U="Parameter" id="3"/>
+                  <MERGE_PARM Exp="5" PIC_U="100" TXT_U="User" id="4"/>
+                </TagsTable>
+                <_Comment id="218"/>
+                <FormName id="311" valUnicode="Merge"/>
+              </PropertyList>
+            </FormEntry>
+          </TaskForms>
+          <Expressions>
+            <Expression id="1">
+              <ExpSyntax val="Trim({2,15})"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="2">
+              <ExpSyntax val="IF({32768,99}='',Owner(),{32768,99})"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="3">
+              <ExpSyntax val="IF({32768,145}='',{32768,101},{32768,145})"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="4">
+              <ExpSyntax val="RepStr({2,16},'|','&lt;br>')"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="5">
+              <ExpSyntax val="Trim({32768,9})&amp;' '&amp;DStr(Date(),{32768,36})&amp;', '&amp;TStr(Time(),'HH:MM:SS')"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+          </Expressions>
+        </Task>
+        <Task MainProgram="N">
+          <Header Description="Download" ISN_2="4" LastIsn="8" id="127">
+            <ExecutionRight comp="-1"/>
+            <Resident val="N"/>
+            <SQL val="N"/>
+            <ReturnValue>
+              <ReturnValueAttr/>
+              <TSK_PARAMS val="1"/>
+              <ParametersAttributes>
+                <Attr MgAttr="A"/>
+              </ParametersAttributes>
+            </ReturnValue>
+            <SqlWhereExist val="N"/>
+            <TaskType val="C"/>
+            <Interactive val="Y"/>
+            <External val="N"/>
+            <FormType val="M"/>
+            <DotNetObjectExists val="N"/>
+            <LastModified _date="739391" _time="33287" date="20/05/2025" time="09:14:47"/>
+          </Header>
+          <ItemIsn val="1"/>
+          <Resource>
+            <Columns>
+              <Column id="1" name="pFile">
+                <PropertyList model="FIELD">
+                  <Model attr_obj="FIELD_ALPHA" id="1"/>
+                  <Picture id="157" valUnicode="200"/>
+                  <StoredAs id="173" val="1"/>
+                  <Size id="174" val="200"/>
+                  <_Flip id="194"/>
+                </PropertyList>
+              </Column>
+            </Columns>
+          </Resource>
+          <Information>
+            <Key>
+              <Mode val="N"/>
+            </Key>
+            <DB comp="-1"/>
+            <Sort>
+              <CLS val="A"/>
+            </Sort>
+            <ForceRecordDelete DEL="N"/>
+            <EndTaskCondition val="Y"/>
+            <EvaluateEndCondition val="B"/>
+            <InitialMode val="M"/>
+            <Locate Direction="A"/>
+            <Range Direction="A"/>
+            <VarRange/>
+            <TaskProperties>
+              <SelectionTable val="N"/>
+              <ConfirmUpdate CNFU="N"/>
+              <ConfirmCancel val="N"/>
+              <ErrorStrategy val="R"/>
+              <LockingStrategy val="M"/>
+              <CacheStrategy val="D"/>
+              <ForceRecordSuffix val="N"/>
+              <TransactionMode val="D"/>
+              <TransactionBegin val="P"/>
+              <PreloadView val="N"/>
+              <AllowEmptyDataview val="Y"/>
+              <KeepCreatedContext val="N"/>
+            </TaskProperties>
+            <SIDE_WIN>
+              <AllowOptions val="Y"/>
+              <AllowQuery val="Y"/>
+              <AllowModify val="Y"/>
+              <AllowCreate val="Y"/>
+              <AllowDelete val="Y"/>
+              <AllowLocate val="Y"/>
+              <AllowRange val="Y"/>
+              <AllowIndexChange val="Y"/>
+              <AllowSorting val="Y"/>
+              <AllowIOFiles val="N"/>
+              <TabbingCycle val="R"/>
+              <AllowEvents val="Y"/>
+              <AllowIndexOptimization val="Y"/>
+              <AllowLocationInQuery val="Y"/>
+              <AllowPrintingData val="N"/>
+            </SIDE_WIN>
+            <WIN>
+              <OpenTaskWindow val="Y"/>
+              <CloseTaskWindow val="Y"/>
+              <ForegroundWindow val="Y"/>
+              <FlipFld val="N"/>
+              <RefreshTaskWindow ReturnValue="N"/>
+            </WIN>
+            <BOX>
+              <Direction val="V"/>
+            </BOX>
+          </Information>
+          <TaskLogic>
+            <LogicUnit id="1" propagate="78">
+              <Level val="R"/>
+              <Type val="M"/>
+              <Scope val="S"/>
+              <EngineDirective val="S"/>
+              <ShowMessage val="Y"/>
+              <Condition val="89"/>
+              <Event>
+                <EventType val="S"/>
+                <PublicObject comp="-1"/>
+              </Event>
+              <ExecuteOn_ val="O"/>
+              <LogicLines>
+                <LogicLine>
+                  <DATAVIEW_SRC FlowIsn="1" Type="M">
+                    <Condition val="N"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </DATAVIEW_SRC>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="1" FlowIsn="2" id="1">
+                    <Column val="1"/>
+                    <Type val="V"/>
+                    <IsParameter val="Y"/>
+                    <INT_DIT_INFO>
+                      <v>1</v>
+                    </INT_DIT_INFO>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="Y"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+              </LogicLines>
+            </LogicUnit>
+          </TaskLogic>
+          <TaskForms>
+            <FormEntry _last_isn="1" _last_test_id="1" id="1">
+              <PropertyList model="FORM_RICH_CLIENT">
+                <Width id="23" val="10"/>
+                <Height id="24" val="10"/>
+                <TitleBar id="26"/>
+                <SystemMenu id="27"/>
+                <FormUnits id="33" val="2"/>
+                <VerticalFactor id="34" val="100"/>
+                <HorizontalFactor id="35" val="100"/>
+                <GridX id="38" val="10"/>
+                <GridY id="39" val="10"/>
+                <BorderStyle id="64" val="3"/>
+                <_Comment id="218"/>
+                <FormName id="311" valUnicode="Download"/>
+              </PropertyList>
+              <Control _test_id="1" id="1">
+                <PropertyList model="CTRL_RICH_CLIENT_BROWSER">
+                  <Y id="22" val="9"/>
+                  <Width id="23" val="7"/>
+                  <Height id="24" val="6"/>
+                  <Data Exp="1" id="43"/>
+                  <Attribute id="83" val="85"/>
+                  <TabOrder id="314" val="1"/>
+                </PropertyList>
+              </Control>
+            </FormEntry>
+          </TaskForms>
+          <Expressions>
+            <Expression id="1">
+              <ExpSyntax val="ServerFileToClient(Trim({0,1}))"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+          </Expressions>
+        </Task>
+        <Task MainProgram="N">
+          <Header Description="Download Mobile" ISN_2="8" LastIsn="8" id="127">
+            <ExecutionRight comp="-1"/>
+            <Resident val="N"/>
+            <SQL val="N"/>
+            <ReturnValue>
+              <ReturnValueAttr/>
+              <TSK_PARAMS val="1"/>
+              <ParametersAttributes>
+                <Attr MgAttr="A"/>
+              </ParametersAttributes>
+            </ReturnValue>
+            <SqlWhereExist val="N"/>
+            <TaskType val="C"/>
+            <Interactive val="Y"/>
+            <External val="N"/>
+            <FormType val="M"/>
+            <DotNetObjectExists val="N"/>
+            <LastModified _date="739391" _time="34376" date="20/05/2025" time="09:32:56"/>
+          </Header>
+          <ItemIsn val="1"/>
+          <Resource>
+            <Columns>
+              <Column id="1" name="pFile">
+                <PropertyList model="FIELD">
+                  <Model attr_obj="FIELD_ALPHA" id="1"/>
+                  <Picture id="157" valUnicode="200"/>
+                  <StoredAs id="173" val="1"/>
+                  <Size id="174" val="200"/>
+                  <_Flip id="194"/>
+                </PropertyList>
+              </Column>
+            </Columns>
+          </Resource>
+          <Information>
+            <Key>
+              <Mode val="N"/>
+            </Key>
+            <DB comp="-1"/>
+            <Sort>
+              <CLS val="A"/>
+            </Sort>
+            <ForceRecordDelete DEL="N"/>
+            <EndTaskCondition val="Y"/>
+            <EvaluateEndCondition val="B"/>
+            <InitialMode val="M"/>
+            <Locate Direction="A"/>
+            <Range Direction="A"/>
+            <VarRange/>
+            <TaskProperties>
+              <SelectionTable val="N"/>
+              <ConfirmUpdate CNFU="N"/>
+              <ConfirmCancel val="N"/>
+              <ErrorStrategy val="R"/>
+              <LockingStrategy val="M"/>
+              <CacheStrategy val="D"/>
+              <ForceRecordSuffix val="N"/>
+              <TransactionMode val="D"/>
+              <TransactionBegin val="P"/>
+              <PreloadView val="N"/>
+              <AllowEmptyDataview val="Y"/>
+              <KeepCreatedContext val="N"/>
+            </TaskProperties>
+            <SIDE_WIN>
+              <AllowOptions val="Y"/>
+              <AllowQuery val="Y"/>
+              <AllowModify val="Y"/>
+              <AllowCreate val="Y"/>
+              <AllowDelete val="Y"/>
+              <AllowLocate val="Y"/>
+              <AllowRange val="Y"/>
+              <AllowIndexChange val="Y"/>
+              <AllowSorting val="Y"/>
+              <AllowIOFiles val="N"/>
+              <TabbingCycle val="R"/>
+              <AllowEvents val="Y"/>
+              <AllowIndexOptimization val="Y"/>
+              <AllowLocationInQuery val="Y"/>
+              <AllowPrintingData val="N"/>
+            </SIDE_WIN>
+            <WIN>
+              <OpenTaskWindow val="Y"/>
+              <CloseTaskWindow val="Y"/>
+              <ForegroundWindow val="Y"/>
+              <FlipFld val="N"/>
+              <RefreshTaskWindow ReturnValue="N"/>
+            </WIN>
+            <BOX>
+              <Direction val="V"/>
+            </BOX>
+          </Information>
+          <TaskLogic>
+            <LogicUnit id="1" propagate="78">
+              <Level val="R"/>
+              <Type val="M"/>
+              <Scope val="S"/>
+              <EngineDirective val="S"/>
+              <ShowMessage val="Y"/>
+              <Condition val="89"/>
+              <Event>
+                <EventType val="S"/>
+                <PublicObject comp="-1"/>
+              </Event>
+              <ExecuteOn_ val="O"/>
+              <LogicLines>
+                <LogicLine>
+                  <DATAVIEW_SRC FlowIsn="1" Type="M">
+                    <Condition val="N"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </DATAVIEW_SRC>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="1" FlowIsn="2" id="1">
+                    <Column val="1"/>
+                    <Type val="V"/>
+                    <IsParameter val="Y"/>
+                    <_DitIndexForToolkit val="1"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="Y"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+              </LogicLines>
+            </LogicUnit>
+          </TaskLogic>
+          <TaskForms>
+            <FormEntry _last_isn="1" _last_test_id="1" id="1">
+              <PropertyList model="FORM_RICH_CLIENT">
+                <Width id="23" val="10"/>
+                <Height id="24" val="10"/>
+                <TitleBar id="26"/>
+                <SystemMenu id="27"/>
+                <FormUnits id="33" val="2"/>
+                <VerticalFactor id="34" val="100"/>
+                <HorizontalFactor id="35" val="100"/>
+                <GridX id="38" val="10"/>
+                <GridY id="39" val="10"/>
+                <BorderStyle id="64" val="3"/>
+                <_Comment id="218"/>
+                <FormName id="311" valUnicode="Download Mobile"/>
+              </PropertyList>
+              <Control PDOD="128" _test_id="1" id="1">
+                <PropertyList model="CTRL_RICH_CLIENT_BROWSER">
+                  <Y id="22" val="9"/>
+                  <Width id="23" val="7"/>
+                  <Height id="24" val="6"/>
+                  <Data FieldID="1" id="43"/>
+                  <ControlName id="46" val="pFile"/>
+                  <TabOrder id="314" val="1"/>
+                </PropertyList>
+              </Control>
+            </FormEntry>
+          </TaskForms>
+        </Task>
+        <Task MainProgram="N">
+          <Header Description="File in Mobile" ISN_2="5" LastIsn="8" id="127">
+            <ExecutionRight comp="-1"/>
+            <Resident val="N"/>
+            <SQL val="N"/>
+            <ReturnValue>
+              <ReturnValueAttr/>
+              <ParametersAttributes/>
+            </ReturnValue>
+            <SqlWhereExist val="N"/>
+            <TaskType val="B"/>
+            <External val="N"/>
+            <FormType val="M"/>
+            <DotNetObjectExists val="N"/>
+            <LastModified _date="739391" _time="33084" date="20/05/2025" time="09:11:24"/>
+          </Header>
+          <Resource>
+            <IO id="1">
+              <Description val="io"/>
+              <IOExpression val="1"/>
+              <OpenPrintDialog val="N"/>
+              <PaperSize val="68"/>
+              <Format val="L"/>
+              <Media val="S"/>
+              <Access val="W"/>
+              <Orientation val="P"/>
+              <PrintPreview val="N"/>
+              <PDF val="N"/>
+              <PrintingAllowed val="Y"/>
+              <ContentCopyingAllowed val="Y"/>
+              <ChangesAllowed val="Y"/>
+              <PageLayoutAllowed val="Y"/>
+              <Vis2LogTranslation val="N"/>
+              <FlipLines val="N"/>
+            </IO>
+            <Columns/>
+          </Resource>
+          <Information>
+            <Key>
+              <Mode val="N"/>
+            </Key>
+            <DB comp="-1"/>
+            <Sort>
+              <CLS val="A"/>
+            </Sort>
+            <ForceRecordDelete DEL="N"/>
+            <EndTaskCondition val="Y"/>
+            <EvaluateEndCondition val="A"/>
+            <InitialMode val="M"/>
+            <Locate Direction="A"/>
+            <Range Direction="A"/>
+            <VarRange/>
+            <TaskProperties>
+              <SelectionTable val="N"/>
+              <ConfirmUpdate CNFU="N"/>
+              <ConfirmCancel val="N"/>
+              <ErrorStrategy val="A"/>
+              <LockingStrategy val="I"/>
+              <CacheStrategy val="N"/>
+              <ForceRecordSuffix val="N"/>
+              <TransactionMode val="W"/>
+              <TransactionBegin val="T"/>
+              <PreloadView val="N"/>
+              <AllowEmptyDataview val="N"/>
+              <KeepCreatedContext val="N"/>
+            </TaskProperties>
+            <SIDE_WIN>
+              <AllowOptions val="N"/>
+              <AllowQuery val="Y"/>
+              <AllowModify val="Y"/>
+              <AllowCreate val="Y"/>
+              <AllowDelete val="Y"/>
+              <AllowLocate val="Y"/>
+              <AllowRange val="Y"/>
+              <AllowIndexChange val="Y"/>
+              <AllowSorting val="Y"/>
+              <AllowIOFiles val="N"/>
+              <RecordCycle val="Y"/>
+              <AllowEvents val="Y"/>
+              <AllowIndexOptimization val="Y"/>
+              <AllowLocationInQuery val="Y"/>
+              <AllowPrintingData val="N"/>
+            </SIDE_WIN>
+            <WIN>
+              <OpenTaskWindow val="N"/>
+              <CloseTaskWindow val="Y"/>
+              <ForegroundWindow val="Y"/>
+              <FlipFld val="N"/>
+              <RefreshTaskWindow ReturnValue="N"/>
+            </WIN>
+            <BOX>
+              <Direction val="V"/>
+            </BOX>
+          </Information>
+          <TaskLogic>
+            <LogicUnit id="1" propagate="78">
+              <Level val="R"/>
+              <Type val="M"/>
+              <Scope val="S"/>
+              <EngineDirective val="S"/>
+              <ShowMessage val="Y"/>
+              <Condition val="89"/>
+              <Event>
+                <EventType val="S"/>
+                <PublicObject comp="-1"/>
+              </Event>
+              <LogicLines>
+                <LogicLine>
+                  <DATAVIEW_SRC FlowIsn="1" Type="M">
+                    <Condition val="N"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </DATAVIEW_SRC>
+                </LogicLine>
+              </LogicLines>
+            </LogicUnit>
+            <LogicUnit id="2" propagate="78">
+              <Level val="T"/>
+              <Type val="S"/>
+              <Scope val="S"/>
+              <EngineDirective val="S"/>
+              <ShowMessage val="Y"/>
+              <Condition val="89"/>
+              <Event>
+                <EventType val="S"/>
+                <PublicObject comp="-1"/>
+              </Event>
+              <Expanded val="1"/>
+              <LogicLines>
+                <LogicLine>
+                  <FormIO FlowIsn="2">
+                    <OperationType val="O"/>
+                    <Page val="A"/>
+                    <IODeviceInfo>
+                      <IoDeviceIndex val="1"/>
+                    </IODeviceInfo>
+                    <FormEntryInfo>
+                      <FormEntryIndex val="2"/>
+                    </FormEntryInfo>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </FormIO>
+                </LogicLine>
+              </LogicLines>
+            </LogicUnit>
+          </TaskLogic>
+          <TaskForms>
+            <FormEntry id="1">
+              <PropertyList model="FORM_GUI0">
+                <_Comment id="218"/>
+                <FormName id="311" valUnicode="File in Mobile"/>
+              </PropertyList>
+            </FormEntry>
+          </TaskForms>
+          <TaskForms>
+            <FormEntry CLSS="2" _last_isn="2" _last_test_id="2" id="2">
+              <PropertyList model="FORM_TEXT">
+                <Width id="23" val="200"/>
+                <Height id="24" val="2"/>
+                <_Comment id="218"/>
+                <FormName id="311" valUnicode="Header"/>
+              </PropertyList>
+              <Control _test_id="1" id="1">
+                <PropertyList model="CTRL_TEXT_EDIT">
+                  <Model ID="MODEL_TEXTBASE" id="1">
+                    <Var FieldID="145" Parent="32768"/>
+                  </Model>
+                  <Width id="23" val="40"/>
+                  <Height id="24" val="1"/>
+                  <Data FieldID="145" Parent="32768" id="43"/>
+                  <_Orientation id="143"/>
+                </PropertyList>
+              </Control>
+              <Control _test_id="2" id="2">
+                <PropertyList model="CTRL_TEXT_EDIT">
+                  <Y id="22" val="1"/>
+                  <Width id="23" val="200"/>
+                  <Height id="24" val="1"/>
+                  <Data Exp="2" id="43"/>
+                  <Format id="82" valUnicode="200"/>
+                  <Attribute id="83" val="85"/>
+                  <_Orientation id="143"/>
+                </PropertyList>
+              </Control>
+            </FormEntry>
+          </TaskForms>
+          <Expressions>
+            <Expression id="1">
+              <ExpSyntax val="Trim({2,15})&amp;'.'&amp;Trim({2,20})"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="2">
+              <ExpSyntax val="RepStr({2,16},'|',ASCIIChr(13)&amp;ASCIIChr(10))"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+          </Expressions>
+        </Task>
+      </Task>
+    </Programs>
+  </ProgramsRepository>
+
+</Application>

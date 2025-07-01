@@ -1,0 +1,989 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Application>
+
+  <Header>
+    <Version val="13030.00"/>
+    <WithIsn val="Y"/>
+    <LastIsn val="84"/>
+    <LastIsnFolder val="0"/>
+    <Folders/>
+  </Header>
+
+  <ModelsRepository>
+    <Models>
+      <Object id="1" name="Form">
+        <PropertyList model="FORM_RICH_CLIENT">
+          <Width id="23" val="2650"/>
+          <Height id="24" val="1500"/>
+          <SystemMenu id="27"/>
+          <FormUnits id="33" val="2"/>
+          <VerticalFactor id="34" val="100"/>
+          <HorizontalFactor id="35" val="100"/>
+          <GridX id="38" val="10"/>
+          <GridY id="39" val="10"/>
+          <Font id="50" val="39"/>
+          <BorderStyle id="64" val="2"/>
+          <_Comment id="218"/>
+          <StartupPosition id="275" val="4"/>
+          <FormName id="311"/>
+          <PersistentFormState id="493" val="Y"/>
+          <OrientationLock id="659" val="3"/>
+          <EnterAnimation id="660" val="5"/>
+          <ExitAnimation id="661" val="4"/>
+          <TitleBarColor id="663" val="77"/>
+        </PropertyList>
+      </Object>
+      <Object id="2" name="Form Report">
+        <PropertyList model="FORM_RICH_CLIENT">
+          <Width id="23" val="2550"/>
+          <Height id="24" val="1500"/>
+          <SystemMenu id="27"/>
+          <FormUnits id="33" val="2"/>
+          <VerticalFactor id="34" val="100"/>
+          <HorizontalFactor id="35" val="100"/>
+          <GridX id="38" val="10"/>
+          <GridY id="39" val="10"/>
+          <Font id="50" val="39"/>
+          <BorderStyle id="64" val="2"/>
+          <_Comment id="218"/>
+          <StartupPosition id="275" val="4"/>
+          <FormName id="311"/>
+          <PersistentFormState id="493" val="Y"/>
+          <OrientationLock id="659" val="3"/>
+          <EnterAnimation id="660" val="7"/>
+          <ExitAnimation id="661" val="7"/>
+          <TitleBarColor id="663" val="77"/>
+        </PropertyList>
+      </Object>
+      <Object id="3" name="Form Windows">
+        <PropertyList model="FORM_RICH_CLIENT">
+          <X id="21"/>
+          <Y id="22"/>
+          <Width id="23" val="1200"/>
+          <Height id="24" val="1000"/>
+          <SystemMenu id="27"/>
+          <FormUnits id="33" val="2"/>
+          <VerticalFactor id="34" val="100"/>
+          <HorizontalFactor id="35" val="100"/>
+          <GridX id="38" val="10"/>
+          <GridY id="39" val="10"/>
+          <Font id="50" val="39"/>
+          <Color id="51" val="1"/>
+          <BorderStyle id="64" val="2"/>
+          <_Comment id="218"/>
+          <StartupPosition id="275" val="4"/>
+          <FormName id="311"/>
+          <WindowType id="358" val="6"/>
+          <PersistentFormState id="493" val="Y"/>
+          <PopUp id="658"/>
+          <OrientationLock id="659" val="3"/>
+          <EnterAnimation id="660" val="2"/>
+          <ExitAnimation id="661" val="3"/>
+          <TitleBarColor id="663" val="77"/>
+        </PropertyList>
+      </Object>
+      <Object id="4" name="SubForm">
+        <PropertyList model="CTRL_RICH_CLIENT_SUBFORM">
+          <Placement bottom="100" id="20" right="100"/>
+          <ControlName id="46" val="SUBFORM"/>
+          <MobileBorderWidth id="664"/>
+          <CornerRadius id="668"/>
+        </PropertyList>
+      </Object>
+      <Object id="5" name="Left Label">
+        <PropertyList model="CTRL_RICH_CLIENT_LABEL">
+          <Font id="50" val="15"/>
+          <Color id="51" val="47"/>
+          <MobileBorderWidth id="664"/>
+        </PropertyList>
+      </Object>
+      <Object id="53" name="Left Label Mandatory">
+        <PropertyList model="CTRL_RICH_CLIENT_LABEL">
+          <Placement id="20" left="100" right="100"/>
+          <Font id="50" val="16"/>
+          <Color id="51" val="47"/>
+          <MobileBorderWidth id="664"/>
+        </PropertyList>
+      </Object>
+      <Object id="54" name="Top Label">
+        <PropertyList model="CTRL_RICH_CLIENT_LABEL">
+          <Font id="50" val="15"/>
+          <Color id="51" val="58"/>
+          <MobileBorderWidth id="664"/>
+        </PropertyList>
+      </Object>
+      <Object id="55" name="Top Label Mandatory">
+        <PropertyList model="CTRL_RICH_CLIENT_LABEL">
+          <Font id="50" val="16"/>
+          <Color id="51" val="58"/>
+          <MobileBorderWidth id="664"/>
+        </PropertyList>
+      </Object>
+      <Object id="6" name="ZoomField">
+        <PropertyList model="CTRL_RICH_CLIENT_EDIT">
+          <Font id="50" val="15"/>
+          <Color id="51" val="81"/>
+          <AllowDrag id="283" val="Y"/>
+          <AllowDrop id="284" val="Y"/>
+          <MobileBorderWidth id="664" val="1"/>
+          <BorderColor id="665" val="78"/>
+          <BorderFocusColor id="667"/>
+          <CornerRadius id="668" val="5"/>
+          <OpenEditDialog id="670" val="3"/>
+          <DefaultAlignment id="671"/>
+          <FocusColor id="678" val="80"/>
+        </PropertyList>
+      </Object>
+      <Object id="56" name="ZoomField Table">
+        <PropertyList model="CTRL_RICH_CLIENT_EDIT">
+          <Font id="50" val="15"/>
+          <Color id="51" val="81"/>
+          <Border id="452"/>
+          <MobileBorderWidth id="664" val="1"/>
+          <BorderColor id="665" val="78"/>
+          <CornerRadius id="668" val="5"/>
+          <OpenEditDialog id="670" val="3"/>
+          <DefaultAlignment id="671"/>
+          <FocusColor id="678" val="80"/>
+        </PropertyList>
+      </Object>
+      <Object id="7" name="Edit">
+        <PropertyList model="CTRL_RICH_CLIENT_EDIT">
+          <Placement id="20" right="100"/>
+          <Font id="50" val="15"/>
+          <Color id="51" val="79"/>
+          <AllowDrag id="283" val="Y"/>
+          <AllowDrop id="284" val="Y"/>
+          <MobileBorderWidth id="664" val="1"/>
+          <BorderColor id="665" val="78"/>
+          <BorderFocusColor id="667"/>
+          <CornerRadius id="668" val="5"/>
+          <OpenEditDialog id="670" val="3"/>
+          <DefaultAlignment id="671"/>
+          <HintColor id="691" val="57"/>
+        </PropertyList>
+      </Object>
+      <Object id="43" name="Edit Date">
+        <PropertyList model="CTRL_RICH_CLIENT_EDIT">
+          <Font id="50" val="15"/>
+          <Color id="51" val="81"/>
+          <SelectProgram comp="-1" id="58" obj="11"/>
+          <MobileBorderWidth id="664" val="1"/>
+          <BorderColor id="665" val="78"/>
+          <CornerRadius id="668" val="5"/>
+        </PropertyList>
+      </Object>
+      <Object id="8" name="Edit Table">
+        <PropertyList model="CTRL_RICH_CLIENT_EDIT">
+          <Placement id="20" right="100"/>
+          <Font id="50" val="15"/>
+          <Color id="51" val="79"/>
+          <AllowDrag id="283" val="Y"/>
+          <AllowDrop id="284" val="Y"/>
+          <Border id="452"/>
+          <MobileBorderWidth id="664" val="1"/>
+          <BorderColor id="665" val="81"/>
+          <BorderFocusWidth id="666" val="1"/>
+          <BorderFocusColor id="667" val="81"/>
+          <CornerRadius id="668" val="5"/>
+          <OpenEditDialog id="670" val="3"/>
+          <DefaultAlignment id="671"/>
+          <HintColor id="691" val="57"/>
+        </PropertyList>
+      </Object>
+      <Object id="9" name="Link Field">
+        <PropertyList model="CTRL_RICH_CLIENT_EDIT">
+          <Placement id="20" right="100"/>
+          <Font id="50" val="15"/>
+          <Color id="51" val="78"/>
+          <Modifiable id="53"/>
+          <TabInto id="269"/>
+          <AllowParking id="315"/>
+          <MobileBorderWidth id="664"/>
+          <BorderColor id="665"/>
+          <BorderFocusWidth id="666"/>
+          <BorderFocusColor id="667"/>
+          <CornerRadius id="668" val="5"/>
+          <OpenEditDialog id="670" val="3"/>
+          <DefaultAlignment id="671"/>
+        </PropertyList>
+      </Object>
+      <Object id="10" name="Link Field Table">
+        <PropertyList model="CTRL_RICH_CLIENT_EDIT">
+          <Placement id="20" right="100"/>
+          <Font id="50" val="15"/>
+          <Color id="51" val="78"/>
+          <Modifiable id="53"/>
+          <TabInto id="269" val="Y"/>
+          <AllowParking id="315" val="Y"/>
+          <Border id="452"/>
+          <MobileBorderWidth id="664"/>
+          <BorderColor id="665"/>
+          <BorderFocusWidth id="666"/>
+          <CornerRadius id="668" val="5"/>
+          <DefaultAlignment id="671"/>
+        </PropertyList>
+      </Object>
+      <Object id="11" name="Total">
+        <PropertyList model="CTRL_RICH_CLIENT_EDIT">
+          <Font id="50" val="16"/>
+          <Color id="51" val="76"/>
+          <Modifiable id="53"/>
+          <AllowParking id="315"/>
+          <MobileBorderWidth id="664" val="1"/>
+          <BorderColor id="665" val="76"/>
+          <BorderFocusWidth id="666" val="1"/>
+          <CornerRadius id="668" val="5"/>
+          <DefaultAlignment id="671"/>
+          <KeyboardType id="673" val="2"/>
+        </PropertyList>
+      </Object>
+      <Object id="12" name="Group">
+        <PropertyList model="CTRL_RICH_CLIENT_GROUP">
+          <Placement id="20"/>
+          <Font id="50" val="16"/>
+          <Color id="51" val="37"/>
+          <Style id="63" val="7"/>
+          <MobileBorderWidth id="664"/>
+          <BorderColor id="665"/>
+          <CornerRadius id="668" val="1"/>
+          <TopBorderMargin id="684"/>
+        </PropertyList>
+      </Object>
+      <Object id="13" name="Tabel">
+        <PropertyList model="CTRL_RICH_CLIENT_TABLE">
+          <Placement bottom="100" id="20" right="100"/>
+          <RowHighlightColor id="410" val="8"/>
+          <SetTableColorBy id="428" val="2"/>
+          <MobileBorderWidth id="664" val="1"/>
+          <BorderColor id="665" val="78"/>
+          <CornerRadius id="668" val="5"/>
+          <TitleColor id="677" val="58"/>
+          <SwipeRefresh id="679"/>
+        </PropertyList>
+      </Object>
+      <Object id="14" name="Column">
+        <PropertyList model="CTRL_RICH_CLIENT_COLUMN">
+          <Font id="50" val="16"/>
+          <Color id="51" val="58"/>
+          <HorizontalAlignment id="65" val="2"/>
+        </PropertyList>
+      </Object>
+      <Object id="15" name="Combo">
+        <PropertyList model="CTRL_RICH_CLIENT_COMBOBOX">
+          <Placement id="20" right="100"/>
+          <Font id="50" val="15"/>
+          <Color id="51" val="79"/>
+          <_Style id="63" val="1"/>
+          <BorderColor id="665" val="78"/>
+          <CornerRadius id="668" val="5"/>
+        </PropertyList>
+      </Object>
+      <Object id="16" name="Radio">
+        <PropertyList model="CTRL_RICH_CLIENT_RADIO">
+          <Font id="50" val="15"/>
+          <Color id="51" val="79"/>
+          <HorizontalAlignment id="65" val="2"/>
+        </PropertyList>
+      </Object>
+      <Object id="17" name="CheckBox">
+        <PropertyList model="CTRL_RICH_CLIENT_CHECKBOX">
+          <Font id="50" val="15"/>
+          <Color id="51" val="79"/>
+          <CheckboxMainStyle id="391" val="3"/>
+        </PropertyList>
+      </Object>
+      <Object id="18" name="Button">
+        <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
+          <Placement id="20" top="100"/>
+          <Font id="50" val="16"/>
+          <Color id="51" val="37"/>
+          <ImageListFileName id="88" val="%IMAGES%Buttons\btn_blank.gif"/>
+          <ButtonStyle id="96" val="2"/>
+        </PropertyList>
+      </Object>
+      <Object id="19" name="AddData">
+        <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
+          <Placement id="20" top="100"/>
+          <ControlName id="46" val="AddData"/>
+          <Font id="50" val="16"/>
+          <Color id="51" val="37"/>
+          <Format id="82"/>
+          <ImageListFileName id="88" val="%IMAGES%BUTTONS\button_add.gif"/>
+          <ButtonStyle id="96" val="2"/>
+          <RaiseEvent id="234">
+            <EventType val="U"/>
+            <Parent val="32768"/>
+            <PublicObject comp="-1" obj="1"/>
+          </RaiseEvent>
+        </PropertyList>
+      </Object>
+      <Object id="20" name="EditData">
+        <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
+          <Placement id="20" top="100"/>
+          <ControlName id="46" val="EditData"/>
+          <Font id="50" val="16"/>
+          <Color id="51" val="37"/>
+          <Format id="82"/>
+          <ImageListFileName id="88" val="%IMAGES%BUTTONS\button_edit.gif"/>
+          <ButtonStyle id="96" val="2"/>
+          <RaiseEvent id="234">
+            <EventType val="U"/>
+            <Parent val="32768"/>
+            <PublicObject comp="-1" obj="2"/>
+          </RaiseEvent>
+        </PropertyList>
+      </Object>
+      <Object id="21" name="DeleteData">
+        <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
+          <Placement id="20" top="100"/>
+          <ControlName id="46" val="DeleteData"/>
+          <Font id="50" val="16"/>
+          <Color id="51" val="37"/>
+          <Format id="82"/>
+          <ImageListFileName id="88" val="%IMAGES%BUTTONS\button_delete.gif"/>
+          <ButtonStyle id="96" val="2"/>
+          <RaiseEvent id="234">
+            <EventType val="U"/>
+            <Parent val="32768"/>
+            <PublicObject comp="-1" obj="4"/>
+          </RaiseEvent>
+        </PropertyList>
+      </Object>
+      <Object id="22" name="Cancel button">
+        <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
+          <Placement id="20" top="100"/>
+          <ControlName id="46" val="CancelData"/>
+          <Font id="50" val="16"/>
+          <Color id="51" val="37"/>
+          <Format id="82"/>
+          <ImageListFileName id="88" val="%IMAGES%BUTTONS\button_cancel.gif"/>
+          <ButtonStyle id="96" val="2"/>
+          <RaiseEvent id="234">
+            <EventType val="U"/>
+            <Parent val="32768"/>
+            <PublicObject comp="-1" obj="7"/>
+          </RaiseEvent>
+        </PropertyList>
+      </Object>
+      <Object id="42" name="Detail Button">
+        <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
+          <Placement id="20" top="100"/>
+          <ControlName id="46" val="DetailData"/>
+          <Font id="50" val="16"/>
+          <Color id="51" val="37"/>
+          <ImageListFileName id="88" val="%IMAGES%Buttons\detail.gif"/>
+          <ButtonStyle id="96" val="2"/>
+          <RaiseEvent id="234">
+            <EventType val="U"/>
+            <Parent val="32768"/>
+            <PublicObject comp="-1" obj="3"/>
+          </RaiseEvent>
+        </PropertyList>
+      </Object>
+      <Object id="23" name="Select button">
+        <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
+          <Placement id="20" top="100"/>
+          <Height id="24"/>
+          <ControlName id="46" val="SelectData"/>
+          <Font id="50" val="16"/>
+          <Color id="51" val="37"/>
+          <Format id="82"/>
+          <ImageListFileName id="88" val="%IMAGES%BUTTONS\button_select.gif"/>
+          <ButtonStyle id="96" val="2"/>
+          <RaiseEvent id="234">
+            <EventType val="I"/>
+            <InternalEventID val="42"/>
+            <PublicObject comp="-1"/>
+          </RaiseEvent>
+        </PropertyList>
+      </Object>
+      <Object id="24" name="Save button">
+        <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
+          <Placement id="20" top="100"/>
+          <Height id="24"/>
+          <ControlName id="46" val="SaveData"/>
+          <Font id="50" val="16"/>
+          <Color id="51" val="37"/>
+          <Format id="82"/>
+          <ImageListFileName id="88" val="%IMAGES%BUTTONS\button_save.gif"/>
+          <ButtonStyle id="96" val="2"/>
+          <RaiseEvent id="234">
+            <EventType val="U"/>
+            <Parent val="32768"/>
+            <PublicObject comp="-1" obj="8"/>
+          </RaiseEvent>
+        </PropertyList>
+      </Object>
+      <Object id="25" name="Print button">
+        <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
+          <Placement id="20" top="100"/>
+          <Height id="24"/>
+          <ControlName id="46" val="SaveData"/>
+          <Font id="50" val="16"/>
+          <Color id="51" val="37"/>
+          <Format id="82"/>
+          <ImageListFileName id="88" val="%IMAGES%BUTTONS\button_print.gif"/>
+          <ButtonStyle id="96" val="2"/>
+          <RaiseEvent id="234">
+            <EventType val="U"/>
+            <Parent val="32768"/>
+            <PublicObject comp="-1" obj="5"/>
+          </RaiseEvent>
+        </PropertyList>
+      </Object>
+      <Object id="26" name="Approve button">
+        <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
+          <Placement id="20" top="100"/>
+          <Height id="24"/>
+          <ControlName id="46" val="Approvebutton"/>
+          <Font id="50" val="16"/>
+          <Color id="51" val="37"/>
+          <Format id="82"/>
+          <ImageListFileName id="88" val="%IMAGES%BUTTONS\button_approve.gif"/>
+          <ButtonStyle id="96" val="2"/>
+          <RaiseEvent id="234">
+            <EventType val="U"/>
+            <Parent val="32768"/>
+            <PublicObject comp="-1" obj="8"/>
+          </RaiseEvent>
+        </PropertyList>
+      </Object>
+      <Object id="27" name="Execute button">
+        <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
+          <Placement id="20" top="100"/>
+          <Height id="24"/>
+          <ControlName id="46" val="Processbutton"/>
+          <Font id="50" val="16"/>
+          <Color id="51" val="37"/>
+          <Format id="82"/>
+          <ImageListFileName id="88" val="%IMAGES%BUTTONS\button_execute.gif"/>
+          <ButtonStyle id="96" val="2"/>
+          <RaiseEvent id="234">
+            <EventType val="U"/>
+            <Parent val="32768"/>
+            <PublicObject comp="-1" obj="13"/>
+          </RaiseEvent>
+        </PropertyList>
+      </Object>
+      <Object id="28" name="Generate button">
+        <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
+          <Placement id="20" top="100"/>
+          <Height id="24"/>
+          <ControlName id="46" val="Generatebutton"/>
+          <Font id="50" val="16"/>
+          <Color id="51" val="37"/>
+          <Format id="82"/>
+          <ImageListFileName id="88" val="%IMAGES%BUTTONS\button_generate.gif"/>
+          <ButtonStyle id="96" val="2"/>
+          <RaiseEvent id="234">
+            <EventType val="U"/>
+            <Parent val="32768"/>
+            <PublicObject comp="-1" obj="13"/>
+          </RaiseEvent>
+        </PropertyList>
+      </Object>
+      <Object id="29" name="Close">
+        <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
+          <Placement id="20" top="100"/>
+          <ControlName id="46" val="CloseWindow"/>
+          <Font id="50" val="16"/>
+          <Color id="51" val="37"/>
+          <Format id="82"/>
+          <ImageListFileName id="88" val="%IMAGES%BUTTONS\button_close.gif"/>
+          <ButtonStyle id="96" val="2"/>
+          <RaiseEvent id="234">
+            <EventType val="U"/>
+            <Parent val="32768"/>
+            <PublicObject comp="-1" obj="9"/>
+          </RaiseEvent>
+        </PropertyList>
+      </Object>
+      <Object id="30" name="AddLine">
+        <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
+          <Tooltip id="56"/>
+          <Format id="82"/>
+          <ImageListFileName id="88" val="%IMAGES%Buttons\CREATE_BTN.jpg"/>
+          <ButtonStyle id="96" val="2"/>
+          <RaiseEvent id="234">
+            <EventType val="U"/>
+            <Parent val="32768"/>
+            <PublicObject comp="-1" obj="15"/>
+          </RaiseEvent>
+          <AllowParking id="315"/>
+          <RaiseAt id="395" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object id="31" name="DelLine">
+        <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
+          <Width id="23"/>
+          <Height id="24"/>
+          <Tooltip id="56"/>
+          <Format id="82"/>
+          <ImageListFileName id="88" val="%IMAGES%Buttons\DEL_btn.jpg"/>
+          <ButtonStyle id="96" val="2"/>
+          <RaiseEvent id="234">
+            <EventType val="U"/>
+            <Parent val="32768"/>
+            <PublicObject comp="-1" obj="16"/>
+          </RaiseEvent>
+          <AllowParking id="315"/>
+          <RaiseAt id="395" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object id="32" name="EditLine">
+        <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
+          <Width id="23"/>
+          <Height id="24"/>
+          <Tooltip id="56"/>
+          <Format id="82"/>
+          <ImageListFileName id="88" val="%IMAGES%Buttons\MODIFY_BTN.jpg"/>
+          <ButtonStyle id="96" val="2"/>
+          <RaiseEvent id="234">
+            <EventType val="I"/>
+            <InternalEventID val="30"/>
+            <PublicObject comp="-1"/>
+          </RaiseEvent>
+          <AllowParking id="315"/>
+          <RaiseAt id="395" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object id="49" name="button LOV">
+        <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
+          <Width id="23"/>
+          <Format id="82"/>
+          <ImageListFileName id="88" val="%IMAGES%Buttons\lov.gif"/>
+          <ButtonStyle id="96" val="2"/>
+          <RaiseEvent id="234">
+            <EventType val="U"/>
+            <Parent val="32768"/>
+            <PublicObject comp="-1" obj="8"/>
+          </RaiseEvent>
+        </PropertyList>
+      </Object>
+      <Object id="50" name="button Excel">
+        <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
+          <Format id="82"/>
+          <ImageListFileName id="88" val="%IMAGES%Buttons\excel.gif"/>
+          <ButtonStyle id="96" val="2"/>
+          <RaiseEvent id="234">
+            <EventType val="U"/>
+            <Parent val="32768"/>
+            <PublicObject comp="-1" obj="24"/>
+          </RaiseEvent>
+        </PropertyList>
+      </Object>
+      <Object id="46" name="buttonAdd">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="255"/>
+          <Size id="174" val="255"/>
+          <_Flip id="194"/>
+          <RichClient id="453">
+            <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
+              <Model comp="-1" id="1" obj="30"/>
+            </PropertyList>
+          </RichClient>
+          <RichClientTable id="454">
+            <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
+              <Model comp="-1" id="1" obj="30"/>
+            </PropertyList>
+          </RichClientTable>
+        </PropertyList>
+      </Object>
+      <Object id="47" name="buttonEdit">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="255"/>
+          <Size id="174" val="255"/>
+          <_Flip id="194"/>
+          <RichClient id="453">
+            <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
+              <Model comp="-1" id="1" obj="32"/>
+            </PropertyList>
+          </RichClient>
+          <RichClientTable id="454">
+            <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
+              <Model comp="-1" id="1" obj="32"/>
+            </PropertyList>
+          </RichClientTable>
+        </PropertyList>
+      </Object>
+      <Object id="48" name="buttonDelete">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="255"/>
+          <Size id="174" val="255"/>
+          <_Flip id="194"/>
+          <RichClient id="453">
+            <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
+              <Model comp="-1" id="1" obj="31"/>
+            </PropertyList>
+          </RichClient>
+          <RichClientTable id="454">
+            <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
+              <Model comp="-1" id="1" obj="31"/>
+            </PropertyList>
+          </RichClientTable>
+        </PropertyList>
+      </Object>
+      <Object id="33" name="Title Report">
+        <PropertyList model="CTRL_GUI1_STATIC">
+          <Font id="50" val="41"/>
+          <VerticalAlignment id="66" val="2"/>
+        </PropertyList>
+      </Object>
+      <Object id="34" name="Header Report">
+        <PropertyList model="CTRL_GUI1_STATIC">
+          <Font id="50" val="40"/>
+          <VerticalAlignment id="66" val="2"/>
+        </PropertyList>
+      </Object>
+      <Object id="35" name="Param Report">
+        <PropertyList model="CTRL_GUI1_EDIT">
+          <Font id="50" val="40"/>
+        </PropertyList>
+      </Object>
+      <Object id="36" name="Detail Report">
+        <PropertyList model="CTRL_GUI1_EDIT">
+          <Font id="50" val="38"/>
+        </PropertyList>
+      </Object>
+      <Object id="37" name="Label Report">
+        <PropertyList model="CTRL_GUI1_STATIC">
+          <Font id="50" val="38"/>
+          <VerticalAlignment id="66" val="2"/>
+        </PropertyList>
+      </Object>
+      <Object id="38" name="MonthPicker">
+        <PropertyList model="CTRL_RICH_CLIENT_DOTNET">
+          <ObjectType id="478" val="Forms.MonthCalendar"/>
+          <ObjectProperties id="479">
+            <PropertyList model="GENERIC"/>
+          </ObjectProperties>
+          <DNControlValueProperty id="541" val="SelectionStart"/>
+          <DNControlValueChangedEvent id="542" val="DateChanged"/>
+        </PropertyList>
+      </Object>
+      <Object id="39" name="DatePicker">
+        <PropertyList model="CTRL_RICH_CLIENT_DOTNET">
+          <ObjectType id="478" val="Forms.DateTimePicker"/>
+          <ObjectProperties id="479">
+            <PropertyList model="GENERIC"/>
+          </ObjectProperties>
+          <DNControlValueProperty id="541" val="Value"/>
+          <DNControlValueChangedEvent id="542" val="ValueChanged"/>
+        </PropertyList>
+      </Object>
+      <Object id="40" name="Marque">
+        <PropertyList model="CTRL_RICH_CLIENT_DOTNET">
+          <ObjectType id="478" val="Forms.ProgressBar"/>
+          <ObjectProperties id="479">
+            <PropertyList model="GENERIC">
+              <Generic DataType="2" id="156816814" name="Style" val="2"/>
+              <Generic DataType="12" id="219747303" name="UseWaitCursor" val="Y"/>
+            </PropertyList>
+          </ObjectProperties>
+        </PropertyList>
+      </Object>
+      <Object id="41" name="ControlButton">
+        <PropertyList model="CTRL_RICH_CLIENT_DOTNET">
+          <AllowParking id="315"/>
+          <ObjectType id="478" val="IgloSys.ControlButton"/>
+          <ObjectProperties id="479">
+            <PropertyList model="GENERIC"/>
+          </ObjectProperties>
+        </PropertyList>
+      </Object>
+      <Object id="44" name="String">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="10"/>
+          <Size id="174" val="10"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="45" name="Logical">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_LOGICAL" id="1"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object id="51" name="LString">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="1000000"/>
+          <Size id="174" val="32000"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="52" name="DocEntry">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="15"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="15"/>
+          <_Negative id="192"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object id="57" name="Company Code">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="U2A"/>
+          <Size id="174" val="2"/>
+          <DbColumnName id="178" val="CO_ID"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="58" name="Branch ID">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="U3A"/>
+          <Size id="174" val="3"/>
+          <DbColumnName id="178" val="BR_CD"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="59" name="Company Name">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="40A"/>
+          <Size id="174" val="40"/>
+          <DbColumnName id="178" val="CO_NAME"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="60" name="Outlet Description">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="40A"/>
+          <Size id="174" val="40"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="61" name="Currency Code">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="U3A"/>
+          <Size id="174" val="3"/>
+          <DbColumnName id="178" val="CURR_CD"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="62" name="Currency Rate">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="6.5CP Z A"/>
+          <_Dec id="181" val="5"/>
+          <_Whole id="182" val="6"/>
+          <_Negative id="192"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object id="63" name="Fiscal Year">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="4P Z A"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="4"/>
+          <_Negative id="192"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object id="64" name="Periode No.">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="2P A"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="2"/>
+          <_Negative id="192"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object id="65" name="Periode Date">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_DATE" id="1"/>
+          <Picture id="157" valUnicode="DD-MM-YYYYA"/>
+          <NullAllowed id="166"/>
+          <NullDefault id="169"/>
+          <DefaultValue id="170" val="0"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object id="66" name="User">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="10A"/>
+          <Size id="174" val="10"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="67" name="Date">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_DATE" id="1"/>
+          <Picture id="157" valUnicode="DD/MM/YYYYA"/>
+          <DefaultValue id="170" val=" 693961"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object id="68" name="NPWP">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="##.###.###.#-###.###A"/>
+          <Size id="174" val="15"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="69" name="IO Device Name">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="20A"/>
+          <Size id="174" val="20"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="70" name="Report Type">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Range id="98" valUnicode="Monthly,Quarterly,Yearly"/>
+          <Picture id="157" valUnicode="1"/>
+          <Size id="174" val="1"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="71" name="Journal No.">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="30"/>
+          <Size id="174" val="30"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="72" name="Account No">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="20A"/>
+          <Size id="174" val="20"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="73" name="Cost Center">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="5A"/>
+          <Size id="174" val="5"/>
+          <DbColumnName id="178" val="CC"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="74" name="Account Type">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Range id="98" valUnicode="Assets,Liabilities,Capital/Equity,Revenue,Expenses"/>
+          <Picture id="157" valUnicode="UA"/>
+          <Size id="174" val="1"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="75" name="(+) Amount Rupiah">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="14.4CP Z A"/>
+          <_Dec id="181" val="4"/>
+          <_Whole id="182" val="14"/>
+          <_Negative id="192"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object id="76" name="(-) Amount Rupiah">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="N14.4CP Z A"/>
+          <_Dec id="181" val="4"/>
+          <_Whole id="182" val="14"/>
+          <_Negative id="192" val="Y"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object id="77" name="Report Format No.">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="3P0Z"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="3"/>
+          <_Negative id="192"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object id="78" name="Application Group">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Range id="98" valUnicode="1=Point Of Sales,2=Inventory/Merchandising,3=Cash Management,4=Account Payable,5=Account Receivable,6=Fixed Assets,7=Payroll,8=Customer Service"/>
+          <Picture id="157" valUnicode="UA"/>
+          <Size id="174" val="1"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="79" name="Transaction Code">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Picture id="157" valUnicode="U10A"/>
+          <Size id="174" val="10"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="80" name="Batch No.">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_NUMERIC" id="1"/>
+          <Picture id="157" valUnicode="10P0A"/>
+          <_Dec id="181"/>
+          <_Whole id="182" val="10"/>
+          <_Negative id="192"/>
+          <_FieldStyle id="276" val="1"/>
+        </PropertyList>
+      </Object>
+      <Object id="81" name="Jenis Transaksi">
+        <PropertyList model="FIELD">
+          <Model attr_obj="FIELD_ALPHA" id="1"/>
+          <Range id="98" valUnicode="1. Kas /Bank,5. DP Supplier,6. DP Customer,7. Pembayaran Hutang,8. Penerimaan Piutang,9.Journal Memorial"/>
+          <Picture id="157" valUnicode="10"/>
+          <Size id="174" val="10"/>
+          <DbColumnName id="178" val="JNSTRX"/>
+          <_Flip id="194"/>
+        </PropertyList>
+      </Object>
+      <Object id="82" name="Tabs Button">
+        <PropertyList model="CTRL_RICH_CLIENT_PUSH_BUTTON">
+          <Placement id="20" top="100"/>
+          <Font id="50" val="16"/>
+          <Color id="51" val="37"/>
+          <ImageListFileName id="88" val="%IMAGES%Buttons\btn_tabs.png"/>
+          <ButtonStyle id="96" val="2"/>
+          <MobileBorderWidth id="664" val="1"/>
+          <CornerRadius id="668" val="2"/>
+        </PropertyList>
+      </Object>
+      <Object id="83" name="Symbol Label">
+        <PropertyList model="CTRL_RICH_CLIENT_LABEL">
+          <Font id="50" val="43"/>
+          <Color id="51" val="82"/>
+          <HorizontalAlignment id="65" val="2"/>
+          <MobileBorderWidth id="664"/>
+        </PropertyList>
+      </Object>
+      <Object id="84" name="Symbol Edit">
+        <PropertyList model="CTRL_RICH_CLIENT_EDIT">
+          <Font id="50" val="43"/>
+          <Color id="51" val="82"/>
+          <Modifiable id="53"/>
+          <HorizontalAlignment id="65" val="2"/>
+          <TabInto id="269"/>
+          <AllowParking id="315"/>
+          <Border id="452"/>
+        </PropertyList>
+      </Object>
+    </Models>
+  </ModelsRepository>
+
+</Application>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Application>
+
+  <Header>
+    <Version val="13030.00"/>
+    <WithIsn val="Y"/>
+    <Exe comp="-1"/>
+    <LastIsn val="43"/>
+    <LastIsnFolder val="0"/>
+    <Folders/>
+  </Header>
+
+  <ComponentsRepository>
+    <Components>
+      <Component id="1" name="UserFunctionality">
+        <Description val="Handles the Range, Locate, Sort and Print Data internal events"/>
+        <ComponentType val="Magic xpa"/>
+        <Type val="U"/>
+        <LoadImmediate val="Y"/>
+        <Comment val="This component provides an interface for the user to perform Range, Locate, Sort and Print Data.The component does not expose any object. It has logic units for handling the Range, Locate, Sort and Print Data internal events.The source code for this component is available in the Add_On\UserFunctionality directory, so you can customize the screens of the component as you wish."/>
+        <CompId val="738976342-28670-18720-BFE77D42E"/>
+        <MciFile val="C:\Magic\xpa33e\Add_On\UserFunctionality\UserFunctionality.eci"/>
+        <CABINET_FILE val="%EngineDir%Add_On\UserFunctionality\UserFunctionality.ecf"/>
+      </Component>
+      <Component id="2" name="System.Windows.Forms">
+        <Description val="System.Windows.Forms"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+        <AssemblyPath val="C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll"/>
+        <UseSpecificVersion val="N"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="13" name="DevExpress.XtraBars.v21.2">
+        <Description val="DevExpress.XtraBars.v21.2"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="DevExpress.XtraBars.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <AssemblyPath val="%WorkingDir%Resource\DevExpress.XtraBars.v21.2.dll"/>
+        <UseSpecificVersion val="N"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="14" name="System.Drawing">
+        <Description val="System.Drawing"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+        <AssemblyPath val="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll"/>
+        <UseSpecificVersion val="N"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="16" name="DevExpress.Data.Desktop.v21.2">
+        <Description val="DevExpress.Data.Desktop.v21.2"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="DevExpress.Data.Desktop.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <AssemblyPath val="%WorkingDir%Resource\DevExpress.Data.Desktop.v21.2.dll"/>
+        <UseSpecificVersion val="N"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="17" name="DevExpress.Data.v21.2">
+        <Description val="DevExpress.Data.v21.2"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="DevExpress.Data.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <AssemblyPath val="%WorkingDir%Resource\DevExpress.Data.v21.2.dll"/>
+        <UseSpecificVersion val="N"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="18" name="DevExpress.Office.v21.2.Core">
+        <Description val="DevExpress.Office.v21.2.Core"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="DevExpress.Office.v21.2.Core, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <AssemblyPath val="%WorkingDir%Resource\DevExpress.Office.v21.2.Core.dll"/>
+        <UseSpecificVersion val="N"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="19" name="DevExpress.Pdf.v21.2.Core">
+        <Description val="DevExpress.Pdf.v21.2.Core"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="DevExpress.Pdf.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <AssemblyPath val="%WorkingDir%Resource\DevExpress.Pdf.v21.2.Core.dll"/>
+        <UseSpecificVersion val="N"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="20" name="DevExpress.Pdf.v21.2.Drawing">
+        <Description val="DevExpress.Pdf.v21.2.Drawing"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="DevExpress.Pdf.v21.2.Drawing, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <AssemblyPath val="%WorkingDir%Resource\DevExpress.Pdf.v21.2.Drawing.dll"/>
+        <UseSpecificVersion val="N"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="21" name="DevExpress.Printing.v21.2.Core">
+        <Description val="DevExpress.Printing.v21.2.Core"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="DevExpress.Printing.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <AssemblyPath val="%WorkingDir%Resource\DevExpress.Printing.v21.2.Core.dll"/>
+        <UseSpecificVersion val="N"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="22" name="DevExpress.RichEdit.v21.2.Core">
+        <Description val="DevExpress.RichEdit.v21.2.Core"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="DevExpress.RichEdit.v21.2.Core, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <AssemblyPath val="%WorkingDir%Resource\DevExpress.RichEdit.v21.2.Core.dll"/>
+        <UseSpecificVersion val="N"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="23" name="DevExpress.Sparkline.v21.2.Cor">
+        <Description val="DevExpress.Sparkline.v21.2.Core"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="DevExpress.Sparkline.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <AssemblyPath val="%WorkingDir%Resource\DevExpress.Sparkline.v21.2.Core.dll"/>
+        <UseSpecificVersion val="N"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="24" name="DevExpress.Utils.v21.2">
+        <Description val="DevExpress.Utils.v21.2"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="DevExpress.Utils.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <AssemblyPath val="%WorkingDir%Resource\DevExpress.Utils.v21.2.dll"/>
+        <UseSpecificVersion val="N"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="26" name="DevExpress.XtraEditors.v21.2">
+        <Description val="DevExpress.XtraEditors.v21.2"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="DevExpress.XtraEditors.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <AssemblyPath val="%WorkingDir%Resource\DevExpress.XtraEditors.v21.2.dll"/>
+        <UseSpecificVersion val="N"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="28" name="DevExpress.XtraLayout.v21.2">
+        <Description val="DevExpress.XtraLayout.v21.2"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="DevExpress.XtraLayout.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <AssemblyPath val="%WorkingDir%Resource\DevExpress.XtraLayout.v21.2.dll"/>
+        <UseSpecificVersion val="N"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="29" name="DevExpress.XtraNavBar.v21.2">
+        <Description val="DevExpress.XtraNavBar.v21.2"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="DevExpress.XtraNavBar.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <AssemblyPath val="%WorkingDir%Resource\DevExpress.XtraNavBar.v21.2.dll"/>
+        <UseSpecificVersion val="N"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="30" name="DevExpress.XtraPdfViewer.v21.2">
+        <Description val="DevExpress.XtraPdfViewer.v21.2"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="DevExpress.XtraPdfViewer.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <AssemblyPath val="%WorkingDir%Resource\DevExpress.XtraPdfViewer.v21.2.dll"/>
+        <UseSpecificVersion val="N"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="31" name="DevExpress.XtraPrinting.v21.2">
+        <Description val="DevExpress.XtraPrinting.v21.2"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="DevExpress.XtraPrinting.v21.2, Version=21.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <AssemblyPath val="%WorkingDir%Resource\DevExpress.XtraPrinting.v21.2.dll"/>
+        <UseSpecificVersion val="N"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="32" name="DevExpress.XtraTreeList.v21.2">
+        <Description val="DevExpress.XtraTreeList.v21.2"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="DevExpress.XtraTreeList.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <AssemblyPath val="%WorkingDir%Resource\DevExpress.XtraTreeList.v21.2.dll"/>
+        <UseSpecificVersion val="N"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="35" name="DevExpress.XtraGrid.v21.2">
+        <Description val="DevExpress.XtraGrid.v21.2"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="DevExpress.XtraGrid.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <AssemblyPath val="%WorkingDir%Resource\DevExpress.XtraGrid.v21.2.dll"/>
+        <UseSpecificVersion val="N"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="33" name="System.Data">
+        <Description val="System.Data"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+        <AssemblyPath val="C:\Windows\Microsoft.Net\assembly\GAC_32\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll"/>
+        <UseSpecificVersion val="N"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="3" name="IgloSys">
+        <Description val="IgloSys"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="IgloSys, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"/>
+        <AssemblyPath val="%WorkingDir%Resource\IgloSys.dll"/>
+        <UseSpecificVersion val="N"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+      <Component id="39" name="Microsoft.mshtml">
+        <Description val="Microsoft.mshtml"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <LastISN val="150"/>
+        <AssemblyName val="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+        <AssemblyPath val="%WorkingDir%Resource\Microsoft.mshtml.dll"/>
+        <UseSpecificVersion val="N"/>
+        <isGuiThreadExecution val="N"/>
+      </Component>
+      <Component id="40" name="Microsoft.Office.Interop.Excel">
+        <Description val="Microsoft.Office.Interop.Excel"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"/>
+        <AssemblyPath val="%WorkingDir%Resource\EXCELPIA.DLL"/>
+        <UseSpecificVersion val="N"/>
+        <isGuiThreadExecution val="N"/>
+      </Component>
+      <Component id="41" name="Microsoft.CSharp">
+        <Description val="Microsoft.CSharp"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+        <AssemblyPath val="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\Microsoft.CSharp\v4.0_4.0.0.0__b03f5f7f11d50a3a\Microsoft.CSharp.dll"/>
+        <UseSpecificVersion val="N"/>
+        <isGuiThreadExecution val="N"/>
+      </Component>
+      <Component id="42" name="System.Core">
+        <Description val="System.Core"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+        <AssemblyPath val="C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll"/>
+        <UseSpecificVersion val="N"/>
+        <isGuiThreadExecution val="N"/>
+      </Component>
+      <Component id="43" name="Newtonsoft.Json">
+        <Description val="Newtonsoft.Json"/>
+        <ComponentType val=".NET"/>
+        <Type val="D"/>
+        <LoadImmediate val="Y"/>
+        <AssemblyName val="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed"/>
+        <AssemblyPath val="%WorkingDir%Resource\Newtonsoft.Json.dll"/>
+        <UseSpecificVersion val="N"/>
+        <isGuiThreadExecution val="Y"/>
+      </Component>
+    </Components>
+    <Aliases LastIsnAliases="2">
+      <Alias id="1">
+        <name val="Forms"/>
+        <DotNetType val="System.Windows.Forms"/>
+      </Alias>
+      <Alias id="2">
+        <name val="IgloSys"/>
+        <DotNetType val="GinSys"/>
+      </Alias>
+    </Aliases>
+  </ComponentsRepository>
+
+</Application>
