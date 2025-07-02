@@ -34,7 +34,7 @@
           <Offline val="N"/>
           <FormType val="D"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739434" _time="33172" date="02/07/2025" time="09:12:52"/>
+          <LastModified _date="739434" _time="39678" date="02/07/2025" time="11:01:18"/>
         </Header>
         <ItemIsn val="12"/>
         <Resource>
@@ -710,6 +710,14 @@
                   <Modifier val="S"/>
                   <Direction val="C"/>
                 </CallTask>
+              </LogicLine>
+              <LogicLine>
+                <STP Buttons="O" DefaultButton="1" ERR_LOG_DEF_CHG="N" FlowIsn="141" IMG_DEF_CHG="N" Image="E" Mode="W" TTL_DEF_CHG="N" TXT="Task Suffix" TitleTxt="Warning" VR_DISP="B">
+                  <AppendToErrorLog val="N"/>
+                  <Condition val="Y"/>
+                  <Modifier val="B"/>
+                  <Direction val="C"/>
+                </STP>
               </LogicLine>
             </LogicLines>
           </LogicUnit>
@@ -6781,7 +6789,7 @@
           </EVNT>
           <VarRangeInfo Mode="E" VarRangeVeeIsn="124" id="4"/>
           <Task MainProgram="N">
-            <Header Description="ReadTempGI" ISN_2="667" LastIsn="673" id="590">
+            <Header Description="ReadTempGI" ISN_2="667" LastIsn="671" id="590">
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -7181,7 +7189,7 @@
             <VarRangeInfo Mode="E" VarRangeVeeIsn="2" id="2"/>
             <VarRangeInfo Mode="E" VarRangeVeeIsn="25" id="4"/>
             <Task MainProgram="N">
-              <Header Description="Read Issue" ISN_2="668" LastIsn="673" id="590">
+              <Header Description="Read Issue" ISN_2="668" LastIsn="671" id="590">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="N"/>
@@ -8167,7 +8175,7 @@
               </Expressions>
               <VarRangeInfo Mode="E" VarRangeVeeIsn="1" id="1"/>
               <Task MainProgram="N">
-                <Header Description="Write" ISN_2="669" LastIsn="673" id="590">
+                <Header Description="Write" ISN_2="669" LastIsn="671" id="590">
                   <ExecutionRight comp="-1"/>
                   <Resident val="N"/>
                   <SQL val="N"/>
@@ -9083,7 +9091,7 @@
                   </Expression>
                 </Expressions>
                 <Task MainProgram="N">
-                  <Header Description="Transaction Batch" ISN_2="670" LastIsn="673" id="590">
+                  <Header Description="Transaction Batch" ISN_2="670" LastIsn="671" id="590">
                     <ExecutionRight comp="-1"/>
                     <Resident val="N"/>
                     <SQL val="N"/>
@@ -9824,7 +9832,7 @@
                   <VarRangeInfo Mode="E" VarRangeVeeIsn="2" id="2"/>
                   <VarRangeInfo Mode="E" VarRangeVeeIsn="3" id="3"/>
                   <Task MainProgram="N">
-                    <Header Description="Write batch" ISN_2="671" LastIsn="673" id="590">
+                    <Header Description="Write batch" ISN_2="671" LastIsn="671" id="590">
                       <ExecutionRight comp="-1"/>
                       <Resident val="N"/>
                       <SQL val="N"/>
@@ -10317,7 +10325,7 @@
             </Task>
           </Task>
           <Task MainProgram="N">
-            <Header Description="Confirmation" ISN_2="664" LastIsn="673" id="590">
+            <Header Description="Confirmation" ISN_2="664" LastIsn="671" id="590">
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -10719,7 +10727,7 @@
             </Expressions>
           </Task>
           <Task MainProgram="N">
-            <Header Description="Read DocRef SPK" ISN_2="639" LastIsn="673" id="590">
+            <Header Description="Read DocRef SPK" ISN_2="639" LastIsn="671" id="590">
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -11065,7 +11073,7 @@
             <VarRangeInfo Mode="E" VarRangeVeeIsn="3" id="2"/>
             <VarRangeInfo Mode="E" VarRangeVeeIsn="7" id="3"/>
             <Task MainProgram="N">
-              <Header Description="GenSPK" ISN_2="623" LastIsn="673" id="590">
+              <Header Description="GenSPK" ISN_2="623" LastIsn="671" id="590">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="N"/>
@@ -12215,7 +12223,7 @@
               <VarRangeInfo Mode="E" VarRangeVeeIsn="119" id="7"/>
               <VarRangeInfo Mode="E" VarRangeVeeIsn="4" id="9"/>
               <Task MainProgram="N">
-                <Header Description="Write Ref" ISN_2="637" LastIsn="673" id="590">
+                <Header Description="Write Ref" ISN_2="637" LastIsn="671" id="590">
                   <ExecutionRight comp="-1"/>
                   <Resident val="N"/>
                   <SQL val="N"/>
@@ -12469,7 +12477,7 @@
                 </Expressions>
               </Task>
               <Task MainProgram="N">
-                <Header Description="Insert WTR1" ISN_2="629" LastIsn="673" id="590">
+                <Header Description="Insert WTR1" ISN_2="629" LastIsn="671" id="590">
                   <ExecutionRight comp="-1"/>
                   <Resident val="N"/>
                   <SQL val="N"/>
@@ -13599,7 +13607,7 @@
                 </Expressions>
               </Task>
               <Task MainProgram="N">
-                <Header Description="Get Warehouse" ISN_2="626" LastIsn="673" id="590">
+                <Header Description="Get Warehouse" ISN_2="626" LastIsn="671" id="590">
                   <ExecutionRight comp="-1"/>
                   <Resident val="N"/>
                   <SQL val="Y"/>
@@ -13883,7 +13891,7 @@
             </Task>
           </Task>
           <Task MainProgram="N">
-            <Header Description="DocRef Dtl Request" ISN_2="642" LastIsn="673" id="590">
+            <Header Description="DocRef Dtl Request" ISN_2="642" LastIsn="671" id="590">
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -14373,7 +14381,7 @@
             <VarRangeInfo Mode="E" VarRangeVeeIsn="2" id="2"/>
             <VarRangeInfo Mode="E" VarRangeVeeIsn="7" id="3"/>
             <Task MainProgram="N">
-              <Header Description="Generate BOM" ISN_2="645" LastIsn="673" id="590">
+              <Header Description="Generate BOM" ISN_2="645" LastIsn="671" id="590">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="N"/>
@@ -15082,7 +15090,7 @@
               </Expressions>
               <VarRangeInfo Mode="E" VarRangeVeeIsn="1" id="1"/>
               <Task MainProgram="N">
-                <Header Description="Write Ref" ISN_2="650" LastIsn="673" id="590">
+                <Header Description="Write Ref" ISN_2="650" LastIsn="671" id="590">
                   <ExecutionRight comp="-1"/>
                   <Resident val="N"/>
                   <SQL val="N"/>
@@ -15336,7 +15344,7 @@
                 </Expressions>
               </Task>
               <Task MainProgram="N">
-                <Header Description="Write Production" ISN_2="646" LastIsn="673" id="590">
+                <Header Description="Write Production" ISN_2="646" LastIsn="671" id="590">
                   <ExecutionRight comp="-1"/>
                   <Resident val="N"/>
                   <SQL val="N"/>
@@ -16350,7 +16358,7 @@
                 </Expressions>
               </Task>
               <Task MainProgram="N">
-                <Header Description="Write BOM" ISN_2="647" LastIsn="673" id="590">
+                <Header Description="Write BOM" ISN_2="647" LastIsn="671" id="590">
                   <ExecutionRight comp="-1"/>
                   <Resident val="N"/>
                   <SQL val="N"/>
@@ -17452,7 +17460,7 @@
             </Task>
           </Task>
           <Task MainProgram="N">
-            <Header Description="Import" ISN_2="607" LastIsn="673" id="590">
+            <Header Description="Import" ISN_2="607" LastIsn="671" id="590">
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -20545,7 +20553,7 @@
               </Expression>
             </Expressions>
             <Task MainProgram="N">
-              <Header Description="Write Detail WTR1" ISN_2="608" LastIsn="673" id="590">
+              <Header Description="Write Detail WTR1" ISN_2="608" LastIsn="671" id="590">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="N"/>
@@ -21571,7 +21579,7 @@
               </Expressions>
             </Task>
             <Task MainProgram="N">
-              <Header Description="Create Batch" ISN_2="609" LastIsn="673" id="590">
+              <Header Description="Create Batch" ISN_2="609" LastIsn="671" id="590">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="N"/>
@@ -22123,7 +22131,7 @@
               </Expressions>
             </Task>
             <Task MainProgram="N">
-              <Header Description="procesBatchNo MSAP" ISN_2="610" LastIsn="673" id="590">
+              <Header Description="procesBatchNo MSAP" ISN_2="610" LastIsn="671" id="590">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="Y"/>
@@ -23224,7 +23232,7 @@
             </Task>
           </Task>
           <Task MainProgram="N">
-            <Header Description="Cost" ISN_2="585" LastIsn="673" id="590">
+            <Header Description="Cost" ISN_2="585" LastIsn="671" id="590">
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -24275,7 +24283,7 @@
             <VarRangeInfo Mode="E" VarRangeVeeIsn="2" id="1"/>
           </Task>
           <Task MainProgram="N">
-            <Header Description="Print (ST) Mht" ISN_2="88" LastIsn="673" id="590">
+            <Header Description="Print (ST) Mht" ISN_2="88" LastIsn="671" id="590">
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -24771,7 +24779,7 @@
               </Expression>
             </Expressions>
             <Task MainProgram="N">
-              <Header Description="Detail" ISN_2="89" LastIsn="673" id="590">
+              <Header Description="Detail" ISN_2="89" LastIsn="671" id="590">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="N"/>
@@ -25243,7 +25251,7 @@
               </Expressions>
               <VarRangeInfo Mode="E" VarRangeVeeIsn="1" id="2"/>
               <Task MainProgram="N">
-                <Header Description="Batch" ISN_2="90" LastIsn="673" id="590">
+                <Header Description="Batch" ISN_2="90" LastIsn="671" id="590">
                   <ExecutionRight comp="-1"/>
                   <Resident val="N"/>
                   <SQL val="N"/>
@@ -25645,7 +25653,7 @@
             </Task>
           </Task>
           <Task MainProgram="N">
-            <Header Description="Print (ST)" ISN_2="67" LastIsn="673" id="590">
+            <Header Description="Print (ST)" ISN_2="67" LastIsn="671" id="590">
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -26678,7 +26686,7 @@
               </Expression>
             </Expressions>
             <Task MainProgram="N">
-              <Header Description="Detail" ISN_2="68" LastIsn="673" id="590">
+              <Header Description="Detail" ISN_2="68" LastIsn="671" id="590">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="N"/>
@@ -27519,7 +27527,7 @@
               </Expressions>
               <VarRangeInfo Mode="E" VarRangeVeeIsn="1" id="2"/>
               <Task MainProgram="N">
-                <Header Description="Batch" ISN_2="72" LastIsn="673" id="590">
+                <Header Description="Batch" ISN_2="72" LastIsn="671" id="590">
                   <ExecutionRight comp="-1"/>
                   <Resident val="N"/>
                   <SQL val="N"/>
@@ -28085,7 +28093,7 @@
             </Task>
           </Task>
           <Task MainProgram="N">
-            <Header Description="Items" ISN_2="10" LastIsn="673" id="590">
+            <Header Description="Items" ISN_2="10" LastIsn="671" id="590">
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -31728,7 +31736,7 @@
             </Expressions>
             <VarRangeInfo Mode="E" VarRangeVeeIsn="1" id="1"/>
             <Task MainProgram="N">
-              <Header Description="Delete Picking" ISN_2="71" LastIsn="673" id="590">
+              <Header Description="Delete Picking" ISN_2="71" LastIsn="671" id="590">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="N"/>
@@ -31910,7 +31918,7 @@
               <VarRangeInfo Mode="E" VarRangeVeeIsn="3" id="3"/>
             </Task>
             <Task MainProgram="N">
-              <Header Description="Delete SN" ISN_2="586" LastIsn="673" id="590">
+              <Header Description="Delete SN" ISN_2="586" LastIsn="671" id="590">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="N"/>
@@ -32082,7 +32090,7 @@
             </Task>
           </Task>
           <Task MainProgram="N">
-            <Header Description="Recalculate" ISN_2="25" LastIsn="673" id="590">
+            <Header Description="Recalculate" ISN_2="25" LastIsn="671" id="590">
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -32465,7 +32473,7 @@
             <VarRangeInfo Mode="E" VarRangeVeeIsn="1" id="1"/>
           </Task>
           <Task MainProgram="N">
-            <Header Description="Validasi Ref" ISN_2="31" LastIsn="673" id="590">
+            <Header Description="Validasi Ref" ISN_2="31" LastIsn="671" id="590">
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="Y"/>
@@ -32728,7 +32736,7 @@
             </Expressions>
           </Task>
           <Task MainProgram="N">
-            <Header Description="Cek Setup" ISN_2="32" LastIsn="673" id="590">
+            <Header Description="Cek Setup" ISN_2="32" LastIsn="671" id="590">
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -32942,7 +32950,7 @@
             </Expressions>
           </Task>
           <Task MainProgram="N">
-            <Header Description="Cek Batch wtr1" ISN_2="62" LastIsn="673" id="590">
+            <Header Description="Cek Batch wtr1" ISN_2="62" LastIsn="671" id="590">
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -33302,7 +33310,7 @@
             </Expressions>
             <VarRangeInfo Mode="E" VarRangeVeeIsn="5" id="1"/>
             <Task MainProgram="N">
-              <Header Description="Check tx_batch" ISN_2="64" LastIsn="673" id="590">
+              <Header Description="Check tx_batch" ISN_2="64" LastIsn="671" id="590">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="N"/>
@@ -33554,7 +33562,7 @@
             </Task>
           </Task>
           <Task MainProgram="N">
-            <Header Description="Get BOM" ISN_2="588" LastIsn="673" id="590">
+            <Header Description="Get BOM" ISN_2="588" LastIsn="671" id="590">
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -33811,7 +33819,7 @@
             </Expressions>
           </Task>
           <Task MainProgram="N">
-            <Header Description="Generate BOM" ISN_2="587" LastIsn="673" id="590">
+            <Header Description="Generate BOM" ISN_2="587" LastIsn="671" id="590">
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -34512,7 +34520,7 @@
             </Expressions>
             <VarRangeInfo Mode="E" VarRangeVeeIsn="1" id="1"/>
             <Task MainProgram="N">
-              <Header Description="Write Production" ISN_2="589" LastIsn="673" id="590">
+              <Header Description="Write Production" ISN_2="589" LastIsn="671" id="590">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="N"/>
@@ -35511,7 +35519,7 @@
               </Expressions>
             </Task>
             <Task MainProgram="N">
-              <Header Description="Write BOM" ISN_2="592" LastIsn="673" id="590">
+              <Header Description="Write BOM" ISN_2="592" LastIsn="671" id="590">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="N"/>
@@ -36612,7 +36620,7 @@
             </Task>
           </Task>
           <Task MainProgram="N">
-            <Header Description="Delete" ISN_2="611" LastIsn="673" id="590">
+            <Header Description="Delete" ISN_2="611" LastIsn="671" id="590">
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -36749,7 +36757,7 @@
             <VarRangeInfo Mode="E" VarRangeVeeIsn="1" id="1"/>
           </Task>
           <Task MainProgram="N">
-            <Header Description="Delete Batch" ISN_2="614" LastIsn="673" id="590">
+            <Header Description="Delete Batch" ISN_2="614" LastIsn="671" id="590">
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -36903,7 +36911,7 @@
             <VarRangeInfo Mode="E" VarRangeVeeIsn="3" id="2"/>
           </Task>
           <Task MainProgram="N">
-            <Header Description="Min Iscommited" ISN_2="625" LastIsn="673" id="590">
+            <Header Description="Min Iscommited" ISN_2="625" LastIsn="671" id="590">
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -37524,7 +37532,7 @@
             </Expressions>
             <VarRangeInfo Mode="E" VarRangeVeeIsn="1" id="1"/>
             <Task MainProgram="N">
-              <Header Description="Update Header" ISN_2="661" LastIsn="673" id="590">
+              <Header Description="Update Header" ISN_2="661" LastIsn="671" id="590">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="N"/>
@@ -37906,7 +37914,7 @@
               </Expressions>
             </Task>
             <Task MainProgram="N">
-              <Header Description="Update OSPK" ISN_2="659" LastIsn="673" id="590">
+              <Header Description="Update OSPK" ISN_2="659" LastIsn="671" id="590">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="N"/>
@@ -38222,7 +38230,7 @@
               </Expressions>
             </Task>
             <Task MainProgram="N">
-              <Header Description="Update SPK" ISN_2="633" LastIsn="673" id="590">
+              <Header Description="Update SPK" ISN_2="633" LastIsn="671" id="590">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="N"/>
@@ -38642,7 +38650,7 @@
               </Expressions>
             </Task>
             <Task MainProgram="N">
-              <Header Description="Update PR" ISN_2="653" LastIsn="673" id="590">
+              <Header Description="Update PR" ISN_2="653" LastIsn="671" id="590">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="N"/>
@@ -38881,7 +38889,7 @@
               </Expressions>
             </Task>
             <Task MainProgram="N">
-              <Header Description="Update Detail Issue" ISN_2="672" LastIsn="673" id="590">
+              <Header Description="Update Detail Issue" ISN_2="672" LastIsn="672" id="590">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="N"/>
